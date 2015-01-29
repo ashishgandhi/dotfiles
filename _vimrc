@@ -108,6 +108,7 @@ au FileType go TagbarOpen
 syntax on                   " Syntax highlighing
 filetype on                 " Detect filetypes
 filetype plugin indent on   " Enable loading indent file for filetype
+set timeoutlen=250          " Life is short, why wait 1000
 set number                  " Display line numbers
 set numberwidth=2           " Set gutter width
 set background=dark         " Use dark theme
