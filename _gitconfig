@@ -19,3 +19,5 @@
 	tool = Kaleidoscope
 [push]
 	default = simple
+[fetch]
+	prune = true
