@@ -52,6 +52,6 @@ git submodule update --init --recursive
 cd ~/Developer/dotfiles
 vim +PluginInstall +qall
 cd _vim/bundle/YouCompleteMe
-./install.sh
+./install.py
 
 chsh -s /bin/zsh
