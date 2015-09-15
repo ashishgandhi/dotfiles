@@ -42,9 +42,16 @@ brew install tig
 brew linkapps
 
 cd /usr/local
-git clone https://go.googlesource.com/go
+git clone https://go.googlesource.com/go go1.4
+cp -r go1.4 go1.5
+ln -s go1.4 go
 cd go/src
+git checkout release-branch.go1.4
 ./make.bash
+cd /usr/local
+ln -s go1.5 go
+cd go/src
+GOROOT_BOOTSTRAP=/usr/local/go1.4 ./make.bash
 
 cd ~/Developer/dotfiles
 git submodule update --init --recursive
