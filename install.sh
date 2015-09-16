@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+set -e
+
 function link_file {
     source="${PWD}/$1"
     target="${HOME}/${1/_/.}"
