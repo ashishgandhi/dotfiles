@@ -47,14 +47,14 @@ brew linkapps
 
 cd /usr/local
 git clone https://go.googlesource.com/go go1.4
-cp -r go1.4 go1.5
+cp -r go1.4 gotip
 ln -s go1.4 go
 cd go/src
 git checkout release-branch.go1.4
 ./make.bash
 cd /usr/local
 rm go
-ln -s go1.5 go
+ln -s gotip go
 cd go/src
 GOROOT_BOOTSTRAP=/usr/local/go1.4 ./make.bash
 
