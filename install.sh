@@ -37,8 +37,10 @@ fi
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install ctags-exuberant
 brew install fasd
-brew install macvim && ln -s /usr/local/bin/mvim /usr/local/bin/vim
-brew install tig
+brew install vim
+brew install ag
+brew install jq
+brew install cmake
 brew linkapps
 
 cd /usr/local
@@ -49,6 +51,7 @@ cd go/src
 git checkout release-branch.go1.4
 ./make.bash
 cd /usr/local
+rm go
 ln -s go1.5 go
 cd go/src
 GOROOT_BOOTSTRAP=/usr/local/go1.4 ./make.bash
