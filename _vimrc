@@ -18,9 +18,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'majutsushi/tagbar'
 Plugin 'tasklist.vim'
-Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'rust-lang/rust.vim'
+
+Plugin 'fatih/vim-go'
+
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-codefmt'
+Plugin 'google/vim-glaive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -65,6 +69,7 @@ let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 " Configure YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 " Go
 " ==
