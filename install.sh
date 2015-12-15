@@ -43,6 +43,7 @@ brew install vim
 brew install ag
 brew install jq
 brew install cmake
+brew install clang-format
 brew linkapps
 
 cd /usr/local
