@@ -13,28 +13,10 @@ function link_file {
     ln -sf ${source} ${target}
 }
 
-function unlink_file {
-    source="${PWD}/$1"
-    target="${HOME}/${1/_/.}"
-
-    if [ -e "${target}.df.bak" ] && [ -L "${target}" ]; then
-        unlink ${target}
-        mv $target.df.bak $target
-    fi
-}
-
-if [ "$1" = "restore" ]; then
-    for i in _*
-    do
-        unlink_file $i
-    done
-    exit
-else
-    for i in _*
-    do
-        link_file $i
-    done
-fi
+for i in _*
+do
+    link_file $i
+done
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install ctags-exuberant
