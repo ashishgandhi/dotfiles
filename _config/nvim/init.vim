@@ -87,13 +87,11 @@ au FileType go nmap <leader>gt <Plug>(go-test)
 
 " Godoc mappings
 au FileType go nmap <leader>gd <Plug>(go-doc)
-au FileType go nmap <leader>gv <Plug>(go-doc-vertical)
 
 " Go definition mappings
 au FileType go nmap gd <Plug>(go-def)
-au FileType go nmap <leader>ds <Plug>(go-def-split)
-au FileType go nmap <leader>dv <Plug>(go-def-vertical)
-au FileType go nmap <leader>dt <Plug>(go-def-tab)
+au FileType go nmap <leader>d <Plug>(go-def-split)
+au FileType go nmap <leader>v <Plug>(go-def-vertical)
 
 " Type information
 au FileType go nmap <leader>i <Plug>(go-info)
