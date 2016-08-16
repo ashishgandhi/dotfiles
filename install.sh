@@ -23,7 +23,6 @@ brew install ctags-exuberant
 brew install fasd
 brew install ag
 brew install jq
-brew install cmake
 brew install clang-format
 brew install neovim/neovim/neovim
 pip2 install --user --upgrade neovim
