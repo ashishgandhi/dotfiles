@@ -25,7 +25,8 @@ brew install ag
 brew install jq
 brew install clang-format
 brew install neovim/neovim/neovim
-pip2 install --user --upgrade neovim
+sudo easy_install pip
+pip install --user --upgrade neovim
 
 # Install Go
 cd /usr/local
