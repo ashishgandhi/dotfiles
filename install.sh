@@ -19,6 +19,7 @@ done
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install go
 brew install ctags-exuberant
 brew install fasd
 brew install ag
@@ -27,20 +28,6 @@ brew install clang-format
 brew install neovim/neovim/neovim
 sudo easy_install pip
 pip install --user --upgrade neovim
-
-# Install Go
-cd /usr/local
-git clone https://go.googlesource.com/go go1.4
-cp -r go1.4 gotip
-ln -s go1.4 go
-cd go/src
-git checkout release-branch.go1.4
-./make.bash
-cd /usr/local
-rm go
-ln -s gotip go
-cd go/src
-GOROOT_BOOTSTRAP=/usr/local/go1.4 ./make.bash
 
 # Setup nvim
 cd ~/Developer/dotfiles
