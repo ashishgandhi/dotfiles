@@ -4,5 +4,5 @@ if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
 fi
 
 export TERM=xterm-256color
-export GOPATH=/Users/ashishgandhi/Developer/go
+export GOPATH=~/Developer/go
 export PATH=$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
