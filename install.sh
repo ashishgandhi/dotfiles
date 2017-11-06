@@ -19,15 +19,8 @@ done
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install go
-brew install ctags-exuberant
-brew install fasd
-brew install ag
-brew install jq
-brew install clang-format
-brew install neovim/neovim/neovim
-sudo easy_install pip
-pip install --user --upgrade neovim
+brew install go python ctags-exuberant fasd ag jq clang-format neovim
+/usr/local/opt/python/libexec/bin/pip install --user --upgrade neovim
 
 # Setup nvim
 cd ~/Developer/dotfiles
