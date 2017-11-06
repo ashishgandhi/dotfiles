@@ -23,6 +23,16 @@ if [[ -z "$LANG" ]]; then
 fi
 
 #
+# Terminal
+#
+export TERM=xterm-256color
+
+#
+# Go
+#
+export GOPATH=~/Developer/go
+
+#
 # Paths
 #
 
@@ -36,6 +46,8 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  $GOPATH/bin
+  /usr/local/opt/python/libexec/bin
   /usr/local/{bin,sbin}
   $path
 )
