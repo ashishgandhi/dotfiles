@@ -5,4 +5,4 @@ fi
 
 export TERM=xterm-256color
 export GOPATH=~/Developer/go
-export PATH=$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+export PATH=$GOPATH/bin:/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
