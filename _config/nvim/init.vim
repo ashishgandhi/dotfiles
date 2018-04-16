@@ -2,32 +2,30 @@ set nocompatible
 filetype off
 let mapleader=","
 
-" Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" Let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Make sure you use single quotes
 
-Plugin 'rstacruz/vim-closer'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-git'
-Plugin 'sjl/gundo.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'majutsushi/tagbar'
-Plugin 'tasklist.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plug 'rstacruz/vim-closer'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'sjl/gundo.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'altercation/vim-colors-solarized'
+Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/TaskList.vim'
+Plug 'Valloric/YouCompleteMe'
 
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 
-Plugin 'google/vim-maktaba'
-Plugin 'google/vim-codefmt'
-Plugin 'google/vim-glaive'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+" Initialize plugin system
+call plug#end()
+
 filetype plugin indent on    " required
 
 " Toggle TaskList
