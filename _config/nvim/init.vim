@@ -17,7 +17,7 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'Valloric/YouCompleteMe'
 
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
