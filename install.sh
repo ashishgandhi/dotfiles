@@ -25,8 +25,8 @@ brew install go python ctags-exuberant fasd ripgrep jq clang-format neovim
 # Setup nvim
 cd ~/Developer/dotfiles
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-nvim +PluginInstall +qall
-cd ~/.vim/bundle/YouCompleteMe
+nvim +PlugInstall +qall
+cd ~/.vim/plugged/YouCompleteMe
 ./install.py --clang-completer
 ln -s /usr/local/bin/nvim /usr/local/bin/vim
 
