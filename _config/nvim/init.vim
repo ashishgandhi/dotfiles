@@ -12,7 +12,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'sjl/gundo.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'altercation/vim-colors-solarized'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'Valloric/YouCompleteMe'
@@ -168,20 +167,3 @@ set smartcase               " unless uppercase letters are used in the regex
 set smarttab                " Handle tabs more intelligently
 set hlsearch                " Highlight searches by default
 set incsearch               " Incrementally search while typing a /regex
-
-" Display
-if has("gui_running")
-    " Remove menu bar
-    set guioptions-=m
-
-    " Remove toolbar
-    set guioptions-=T
-
-    " Set font
-    set guifont=Menlo:h14
-endif
-
-" Solarized options
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-silent! colorscheme solarized
