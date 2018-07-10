@@ -104,7 +104,7 @@ au FileType go TagbarOpen
 " ===
 
 " Basic settings
-syntax on                   " Syntax highlighing
+syntax off                  " Syntax highlighing
 filetype on                 " Detect filetypes
 filetype plugin indent on   " Enable loading indent file for filetype
 set timeoutlen=250          " Life is short, why wait 1000
