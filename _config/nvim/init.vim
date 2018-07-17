@@ -15,9 +15,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'Valloric/YouCompleteMe'
-
+Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
@@ -104,7 +103,7 @@ au FileType go TagbarOpen
 " ===
 
 " Basic settings
-syntax off                  " Syntax highlighing
+syntax enable               " Syntax highlighing
 filetype on                 " Detect filetypes
 filetype plugin indent on   " Enable loading indent file for filetype
 set timeoutlen=250          " Life is short, why wait 1000
@@ -167,3 +166,6 @@ set smartcase               " unless uppercase letters are used in the regex
 set smarttab                " Handle tabs more intelligently
 set hlsearch                " Highlight searches by default
 set incsearch               " Incrementally search while typing a /regex
+
+" Solarized options
+colorscheme solarized
