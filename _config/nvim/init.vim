@@ -168,4 +168,4 @@ set hlsearch                " Highlight searches by default
 set incsearch               " Incrementally search while typing a /regex
 
 " Solarized options
-colorscheme solarized
+silent! colorscheme solarized
