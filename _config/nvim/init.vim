@@ -7,7 +7,6 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
 Plug 'rstacruz/vim-closer'
-Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'sjl/gundo.vim'
@@ -17,6 +16,8 @@ Plug 'vim-scripts/TaskList.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
@@ -40,11 +41,10 @@ nmap <leader>cc :cclose<CR>
 map <leader>N :NERDTreeToggle<CR>
 map <leader>n :NERDTreeFind<CR>
 
-" Setup CtrlP shortcuts and setting
-map <leader>f :CtrlP<CR>
-map <leader>b :CtrlPBuffer<CR>
-let g:ctrlp_dont_split="nerd"
-let g:ctrlp_use_caching=0
+" Setup FZF
+map <leader>f :Files<CR>
+map <leader>a :Lines<CR>
+map <leader>b :Buffers<CR>
 
 " Load the Gundo window
 map <leader>gu :GundoToggle<CR>
