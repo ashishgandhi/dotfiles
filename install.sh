@@ -34,3 +34,61 @@ ln -s /usr/local/bin/nvim /usr/local/bin/vim
 cd ~
 git clone --recursive https://github.com/sorin-ionescu/prezto.git ".zprezto"
 chsh -s /bin/zsh
+
+# Customize preferences
+
+# Global
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3 # Full Keyboard Access: All controls
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float 3
+# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
+
+# Menu Bar
+defaults write com.apple.systemuiserver menuExtras -array \
+"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+"/System/Library/CoreServices/Menu Extras/Clock.menu" \
+"/System/Library/CoreServices/Menu Extras/Displays.menu" \
+"/System/Library/CoreServices/Menu Extras/Volume.menu"
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.menuextra.clock DateFormat -string "MMM d  h:mm"
+killall SystemUIServer
+
+# Finder
+defaults write com.apple.finder ShowPathbar -bool YES
+defaults write com.apple.finder ShowStatusBar -bool YES
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+defaults write com.apple.finder FXPreferredViewStyle -string "icnv" # Nlsv, clmv, Flwv
+defaults write com.apple.finder NewWindowTarget "PfHm"
+defaults write com.apple.finder NewWindowTargetPath "file://$HOME/"
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
+killall Finder
+
+# Dock
+defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock launchanim -bool NO
+defaults write com.apple.dock mru-spaces -bool NO
+defaults write com.apple.dock magnification -bool NO
+defaults write com.apple.dock show-recents -bool NO
+killall Dock
+
+# Mission Control
+# Hot corners
+# Possible values:
+#
+#  0: no-op
+#  2: Mission Control
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
+#
+# Corner are tl, tr, bl, br
+defaults write com.apple.dock wvous-bl-corner -int 5
+defaults write com.apple.dock wvous-bl-modifier -int 0
+defaults write com.apple.dock showAppExposeGestureEnabled -bool YES
+killall Dock
