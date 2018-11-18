@@ -123,3 +123,19 @@ defaults write com.torusknot.SourceTreeNotMAS createBookmarksOnOpenRepo -bool NO
 defaults write com.torusknot.SourceTreeNotMAS fileStatusStagingViewMode -int 1
 defaults write com.torusknot.SourceTreeNotMAS agreedToUpdateConfig -bool NO
 killall Sourcetree
+
+# iTerm2
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
+killall iTerm2
+
+# Terminal
+osascript <<EOD
+tell application "Terminal"
+    set theme to "Solarized Dark"
+    do shell script "open '" & theme & ".terminal'"
+	delay 1
+	set default settings to settings set theme
+end tell
+EOD
+
