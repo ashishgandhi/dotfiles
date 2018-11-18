@@ -19,10 +19,11 @@ done
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format neovim youtube-dl fzf
+brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format neovim youtube-dl fzf mas
 /usr/local/opt/python/libexec/bin/pip install --user --upgrade neovim
 
 # Setup nvim
+export GOBIN=$HOME/Developer/go/bin
 cd ~/Developer/dotfiles
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall +qall
@@ -34,6 +35,13 @@ ln -s /usr/local/bin/nvim /usr/local/bin/vim
 cd ~
 git clone --recursive https://github.com/sorin-ionescu/prezto.git ".zprezto"
 chsh -s /bin/zsh
+
+# Install apps
+brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2
+
+# Install Mac App Store apps
+# Keka, The Unarchiver, Paste, Spark, Fantastical 2, Things3, iStat Menus, Kaleidoscope, Amphetamine, Magnet, Reeder, Pocket, Wipr, PomTimer, Tweetbot 3, WhatsApp, DaisyDisk
+mas install 470158793 425424353 967805235 1176895641 975937182 904280696 1319778037 587512244 937984704 441258766 880001334 568494494 1320666476 843107699 1384080005 1147396723 411643860
 
 # Customize preferences
 
@@ -92,3 +100,26 @@ defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock showAppExposeGestureEnabled -bool YES
 killall Dock
+
+# Tweetbot
+defaults write com.tapbots.Tweetbot3Mac syncType -int 1
+defaults write com.tapbots.Tweetbot3Mac autoplayVideoTimeline -bool NO
+killall Tweetbot
+
+# Reeder
+defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
+defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
+killall Reeder
+
+# Fantastical
+defaults write com.flexibits.fantastical2.mac HideStatusItem -bool YES
+defaults write com.flexibits.fantastical2.mac ListShows -int 1
+defaults write com.flexibits.fantastical2.mac ShowCalendarWeeks -bool YES
+defaults write com.flexibits.fantastical2.mac IgnoreQuitWarning -bool YES
+killall "Fantastical 2"
+
+# Sourcetree
+defaults write com.torusknot.SourceTreeNotMAS createBookmarksOnOpenRepo -bool NO
+defaults write com.torusknot.SourceTreeNotMAS fileStatusStagingViewMode -int 1
+defaults write com.torusknot.SourceTreeNotMAS agreedToUpdateConfig -bool NO
+killall Sourcetree
