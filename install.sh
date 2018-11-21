@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-# Link config files
+# Use prezto
 function link_file {
     source="${PWD}/$1"
     target="${HOME}/${1/_/.}"
@@ -9,7 +9,7 @@ function link_file {
         mv $target $target.df.bak
     fi
 
-    ln -sf ${source} ${target}
+    ln -sfh ${source} ${target}
 }
 
 for i in _*
@@ -17,24 +17,21 @@ do
 	link_file $i
 done
 
+git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
+chsh -s /bin/zsh
+exec $SHELL
+
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format neovim youtube-dl fzf mas
 /usr/local/opt/python/libexec/bin/pip install --user --upgrade neovim
 
 # Setup nvim
-export GOBIN=$HOME/Developer/go/bin
-cd ~/Developer/dotfiles
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py --clang-completer
 ln -s /usr/local/bin/nvim /usr/local/bin/vim
-
-# Use prezto
-cd ~
-git clone --recursive https://github.com/sorin-ionescu/prezto.git ".zprezto"
-chsh -s /bin/zsh
 
 # Install apps
 brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2
