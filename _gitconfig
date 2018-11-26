@@ -21,5 +21,3 @@
 	default = simple
 [fetch]
 	prune = true
-[http]
-	cookiefile = /Users/ashishg/.gitcookies
