@@ -2,24 +2,23 @@
 
 # Use prezto
 function link_file {
-    source="${PWD}/$1"
-    target="${HOME}/${1/_/.}"
+    src="${PWD}/$1"
+    dst="${HOME}/${1/_/.}"
 
-    if [ -e "${target}" ] && [ ! -L "${target}" ]; then
-        mv $target $target.df.bak
+    if [ -e "${dst}" ] && [ ! -L "${dst}" ]; then
+        mv $dst $dst.bak
     fi
 
-    ln -sfh ${source} ${target}
+    ln -sfh ${src} ${dst}
 }
 
 for i in _*
 do
-	link_file $i
+    link_file $i
 done
 
 git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
 chsh -s /bin/zsh
-exec $SHELL
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -101,25 +100,21 @@ killall Dock
 # Tweetbot
 defaults write com.tapbots.Tweetbot3Mac syncType -int 1
 defaults write com.tapbots.Tweetbot3Mac autoplayVideoTimeline -bool NO
-killall Tweetbot
 
 # Reeder
 defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
 defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
-killall Reeder
 
 # Fantastical
 defaults write com.flexibits.fantastical2.mac HideStatusItem -bool YES
 defaults write com.flexibits.fantastical2.mac ListShows -int 1
 defaults write com.flexibits.fantastical2.mac ShowCalendarWeeks -bool YES
 defaults write com.flexibits.fantastical2.mac IgnoreQuitWarning -bool YES
-killall "Fantastical 2"
 
 # Sourcetree
 defaults write com.torusknot.SourceTreeNotMAS createBookmarksOnOpenRepo -bool NO
 defaults write com.torusknot.SourceTreeNotMAS fileStatusStagingViewMode -int 1
 defaults write com.torusknot.SourceTreeNotMAS agreedToUpdateConfig -bool NO
-killall Sourcetree
 
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
@@ -128,15 +123,14 @@ defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile_se
 defaults write com.googlecode.iterm2 NoSyncTipsDisabled -bool YES
 defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -bool YES
 defaults write com.googlecode.iterm2 SUEnableAutomaticChecks -bool YES
-killall iTerm2
 
 # Terminal
 osascript <<EOD
 tell application "Terminal"
     set theme to "Solarized Dark"
-    do shell script "open '" & theme & ".terminal'"
-	delay 1
-	set default settings to settings set theme
+    do shell script "open ~/.config/terminal/'" & theme & ".terminal'"
+    delay 1
+    set default settings to settings set theme
 end tell
 EOD
 
