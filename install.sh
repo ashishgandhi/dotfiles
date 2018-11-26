@@ -124,6 +124,10 @@ killall Sourcetree
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
+defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile_selection -int 1
+defaults write com.googlecode.iterm2 NoSyncTipsDisabled -bool YES
+defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -bool YES
+defaults write com.googlecode.iterm2 SUEnableAutomaticChecks -bool YES
 killall iTerm2
 
 # Terminal
