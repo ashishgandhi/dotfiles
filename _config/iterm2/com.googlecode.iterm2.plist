@@ -4,6 +4,8 @@
 <dict>
 	<key>PromptOnQuit</key>
 	<false/>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>7BC0D514-309B-4365-B47E-0489FEF81541</string>
 	<key>NeverWarnAboutShortLivedSessions_7BC0D514-309B-4365-B47E-0489FEF81541</key>
