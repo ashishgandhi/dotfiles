@@ -25,21 +25,14 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format neovim youtube-dl fzf mas htop tig
 /usr/local/opt/python/libexec/bin/pip install --user --upgrade neovim
 
-# Setup nvim
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-nvim +PlugInstall +qall
-cd ~/.vim/plugged/YouCompleteMe
-./install.py --clang-completer
-ln -s /usr/local/bin/nvim /usr/local/bin/vim
-
 # Install apps
-brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2
+brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2 macvim
 
 # Install Mac App Store apps
 # Keka, The Unarchiver, Paste, Spark, Fantastical 2, Things3, iStat Menus, Kaleidoscope, Amphetamine, Magnet, Reeder, Pocket, Wipr, PomTimer, Tweetbot 3, WhatsApp, DaisyDisk
 mas install 470158793 425424353 967805235 1176895641 975937182 904280696 1319778037 587512244 937984704 441258766 880001334 568494494 1320666476 843107699 1384080005 1147396723 411643860
 
-# Customize preferences
+# Preferences
 
 # Global
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3 # Full Keyboard Access: All controls
@@ -96,6 +89,14 @@ defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock showAppExposeGestureEnabled -bool YES
 killall Dock
+
+# MacVim
+defaults write org.vim.MacVim MMLastWindowClosedBehavior -int 2
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mvim +PlugInstall +qall
+cd ~/.vim/plugged/YouCompleteMe
+./install.py --clang-completer
+ln -s /Applications/MacVim.app/Contents/bin/mvim /usr/local/bin/vim
 
 # Tweetbot
 defaults write com.tapbots.Tweetbot3Mac syncType -int 1
