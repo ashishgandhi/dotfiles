@@ -120,6 +120,9 @@ defaults write com.torusknot.SourceTreeNotMAS agreedToUpdateConfig -bool NO
 defaults write com.torusknot.SourceTreeNotMAS checkRemoteStatus -bool NO
 defaults write com.torusknot.SourceTreeNotMAS bookmarksClosedOnStartup -bool YES
 
+# IntelliJ
+defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
+
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
