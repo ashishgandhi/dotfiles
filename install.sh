@@ -112,9 +112,13 @@ defaults write com.flexibits.fantastical2.mac ShowCalendarWeeks -bool YES
 defaults write com.flexibits.fantastical2.mac IgnoreQuitWarning -bool YES
 
 # Sourcetree
-defaults write com.torusknot.SourceTreeNotMAS createBookmarksOnOpenRepo -bool NO
 defaults write com.torusknot.SourceTreeNotMAS fileStatusStagingViewMode -int 1
+defaults write com.torusknot.SourceTreeNotMAS terminalApp -int 2
+defaults write com.torusknot.SourceTreeNotMAS windowRestorationMethod -int 3
+defaults write com.torusknot.SourceTreeNotMAS createBookmarksOnOpenRepo -bool NO
 defaults write com.torusknot.SourceTreeNotMAS agreedToUpdateConfig -bool NO
+defaults write com.torusknot.SourceTreeNotMAS checkRemoteStatus -bool NO
+defaults write com.torusknot.SourceTreeNotMAS bookmarksClosedOnStartup -bool YES
 
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
