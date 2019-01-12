@@ -130,8 +130,9 @@ set linebreak               " Don't wrap text in the middle of a word
 set autoindent              " Always set autoindenting on
 set smartindent             " Use smart indent if there is no indent file
 set tabstop=4               " <tab> inserts 4 spaces
-set shiftwidth=4            " But an indent level is 2 spaces wide
+set shiftwidth=4            " Indent is 4 spaces wide
 set softtabstop=4           " <BS> over an autoindent deletes both spaces
+set expandtab               " Use spaces because Go will auto convert to tab
 set shiftround              " Rounds indent to a multiple of shiftwidth
 set matchpairs+=<:>         " Show matching <> (html mainly) as well
 set foldlevel=99            " Don't fold by default
