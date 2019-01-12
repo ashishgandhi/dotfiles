@@ -22,7 +22,7 @@ chsh -s /bin/zsh
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format neovim youtube-dl fzf mas
+brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format neovim youtube-dl fzf mas htop tig
 /usr/local/opt/python/libexec/bin/pip install --user --upgrade neovim
 
 # Setup nvim
