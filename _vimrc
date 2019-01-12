@@ -15,6 +15,7 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'altercation/vim-colors-solarized'
+Plug 'tomasiser/vim-code-dark'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -167,5 +168,7 @@ set smarttab                " Handle tabs more intelligently
 set hlsearch                " Highlight searches by default
 set incsearch               " Incrementally search while typing a /regex
 
-" Solarized options
-silent! colorscheme solarized
+" Customize UI
+colorscheme solarized
+set guifont=Menlo\ Regular:h13
+set guioptions=
