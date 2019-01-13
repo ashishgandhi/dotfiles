@@ -170,6 +170,6 @@ set hlsearch                " Highlight searches by default
 set incsearch               " Incrementally search while typing a /regex
 
 " Customize UI
-colorscheme solarized
+colorscheme codedark
 set guifont=Menlo\ Regular:h13
 set guioptions=
