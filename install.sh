@@ -34,8 +34,10 @@ mas install 470158793 425424353 967805235 1176895641 975937182 904280696 1319778
 # Preferences
 
 # Global
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3 # Full Keyboard Access: All controls
-defaults write NSGlobalDomain com.apple.trackpad.scaling -float 3
+defaults write -g AppleKeyboardUIMode -int 3 # Full Keyboard Access: All controls
+defaults write -g com.apple.trackpad.scaling -float 3
+defaults write -g InitialKeyRepeat -int 25
+defaults write -g KeyRepeat -int 2
 # defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
 
 # Menu Bar
