@@ -22,8 +22,7 @@ chsh -s /bin/zsh
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format neovim youtube-dl fzf mas htop tig
-/usr/local/opt/python/libexec/bin/pip install --user --upgrade neovim
+brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format youtube-dl fzf mas htop tig
 
 # Install apps
 brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2 macvim
@@ -96,7 +95,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 mvim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py --clang-completer
-ln -s /Applications/MacVim.app/Contents/bin/mvim /usr/local/bin/vim
 
 # Tweetbot
 defaults write com.tapbots.Tweetbot3Mac syncType -int 1
