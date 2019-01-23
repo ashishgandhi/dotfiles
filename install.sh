@@ -124,6 +124,10 @@ defaults write com.torusknot.SourceTreeNotMAS bookmarksClosedOnStartup -bool YES
 # IntelliJ
 defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
 
+# Numi
+defaults write com.dmitrynikolaev.numi nightTheme -bool true
+defaults write com.dmitrynikolaev.numi menuBarMode -bool true
+
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
