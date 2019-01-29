@@ -22,7 +22,7 @@ chsh -s /bin/zsh
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format youtube-dl fzf mas htop tig
+brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format youtube-dl fzf mas htop tig macvim
 
 # Install apps
 brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2 macvim numi
