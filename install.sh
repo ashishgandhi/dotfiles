@@ -94,7 +94,7 @@ killall Dock
 # MacVim
 defaults write org.vim.MacVim MMLastWindowClosedBehavior -int 2
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-mvim +PlugInstall +qall
+vim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py --clang-completer
 
