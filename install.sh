@@ -135,6 +135,7 @@ defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile_se
 defaults write com.googlecode.iterm2 NoSyncTipsDisabled -bool YES
 defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -bool YES
 defaults write com.googlecode.iterm2 SUEnableAutomaticChecks -bool YES
+defaults write com.googlecode.iterm2 AlternateMouseScroll -bool YES
 
 # Terminal
 osascript <<EOD
