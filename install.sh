@@ -112,6 +112,9 @@ defaults write com.flexibits.fantastical2.mac ListShows -int 1
 defaults write com.flexibits.fantastical2.mac ShowCalendarWeeks -bool YES
 defaults write com.flexibits.fantastical2.mac IgnoreQuitWarning -bool YES
 
+# Paste
+defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
+
 # Sourcetree
 defaults write com.torusknot.SourceTreeNotMAS fileStatusStagingViewMode -int 1
 defaults write com.torusknot.SourceTreeNotMAS terminalApp -int 2
