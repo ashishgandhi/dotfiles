@@ -25,6 +25,7 @@ fi
 #
 # Go
 #
+export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=~/Developer/go
 export GOBIN=~/Developer/go/bin
 
