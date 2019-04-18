@@ -9,5 +9,6 @@ source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
 source "$(brew --prefix)/opt/fzf/shell/completion.zsh"
 
 alias f="mdfind -onlyin ."
+alias mgl="git log --oneline --author='Ashish Gandhi'"
 alias fixservices="/System/Library/CoreServices/pbs -flush"
 alias fixopenwith="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user"
