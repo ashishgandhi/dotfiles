@@ -28,8 +28,8 @@ brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format
 brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2 macvim numi alfred intellij-idea
 
 # Install Mac App Store apps
-# Keka, The Unarchiver, Paste, Spark, Fantastical 2, Things3, iStat Menus, Kaleidoscope, Amphetamine, Magnet, Reeder, Pocket, Wipr, PomTimer, Tweetbot 3, WhatsApp, DaisyDisk, Silicio
-mas install 470158793 425424353 967805235 1176895641 975937182 904280696 1319778037 587512244 937984704 441258766 880001334 568494494 1320666476 843107699 1384080005 1147396723 411643860 933627574
+# Keka, The Unarchiver, Paste, Spark, Fantastical 2, Things3, iStat Menus, Kaleidoscope, Amphetamine, Magnet, Reeder, Pocket, Wipr, PomTimer, Tweetbot 3, WhatsApp, DaisyDisk, Silicio, Monodraw
+mas install 470158793 425424353 967805235 1176895641 975937182 904280696 1319778037 587512244 937984704 441258766 880001334 568494494 1320666476 843107699 1384080005 1147396723 411643860 933627574 920404675
 
 # Preferences
 
