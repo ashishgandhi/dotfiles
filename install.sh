@@ -25,7 +25,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format youtube-dl fzf mas htop tig
 
 # Install apps
-brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2 macvim numi alfred intellij-idea homebrew/cask-versions/sequel-pro-nightly
+brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2 macvim numi alfred intellij-idea spotify homebrew/cask-versions/sequel-pro-nightly
 
 # Install Mac App Store apps
 # Keka, The Unarchiver, Paste, Spark, Fantastical 2, Things3, iStat Menus, Kaleidoscope, Amphetamine, Magnet, Reeder, Pocket, Wipr, PomTimer, Tweetbot 3, WhatsApp, DaisyDisk, Silicio, Monodraw
