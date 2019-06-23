@@ -5,11 +5,18 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install go python cmake ffmpeg ctags-exuberant fasd ripgrep jq clang-format youtube-dl fzf mas htop tig
 
 # Install apps
-brew cask install dash 1password iina sublime-text appcleaner sourcetree bartender google-chrome iterm2 macvim numi alfred intellij-idea spotify homebrew/cask-versions/sequel-pro-nightly
+brew cask install 1password alfred appcleaner dash google-chrome iina intellij-idea macvim paw sourcetree spotify sublime-text
+
+# No longer installing
+# brew cask uninstall alfred bartender homebrew/cask-versions/sequel-pro-nightly iterm2 numi
 
 # Install Mac App Store apps
-# Keka, The Unarchiver, Paste, Spark, Fantastical 2, Things3, iStat Menus, Kaleidoscope, Amphetamine, Magnet, Reeder, Pocket, Wipr, PomTimer, Tweetbot 3, WhatsApp, DaisyDisk, Silicio, Monodraw, JSON Editor
-mas install 470158793 425424353 967805235 1176895641 975937182 904280696 1319778037 587512244 937984704 441258766 880001334 568494494 1320666476 843107699 1384080005 1147396723 411643860 933627574 920404675 567740330
+# Amphetamine, DaisyDisk, Fantastical 2, JSON Editor, Kaleidoscope, Keka, Magnet, Monodraw, Paste, Reeder, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
+mas install 937984704 411643860 975937182 567740330 587512244 470158793 441258766 920404675 967805235 880001334 1176895641 904280696 1384080005 1147396723 1320666476
+
+# No longer installing
+# Pocket, PomTimer, Silicio, The Unarchiver, iStat Menus
+# mas uninstall 568494494 843107699 933627574 425424353 1319778037
 
 # Preferences
 
