@@ -2,7 +2,7 @@
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf go htop ipython jq mas python ripgrep tig youtube-dl
+brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf go htop ipython jq mas ncdu python ripgrep tig youtube-dl
 
 # Install apps
 brew cask install 1password alfred appcleaner dash google-chrome iina intellij-idea macvim paw spotify sublime-text
