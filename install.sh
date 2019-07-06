@@ -130,7 +130,7 @@ defaults write com.googlecode.iterm2 AlternateMouseScroll -bool YES
 # Terminal
 osascript <<EOD
 tell application "Terminal"
-    set theme to "Solarized Dark"
+    set theme to "Custom"
     do shell script "open ~/.config/terminal/'" & theme & ".terminal'"
     delay 1
     set default settings to settings set theme
