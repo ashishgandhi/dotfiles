@@ -17,8 +17,12 @@
 	<real>1.004032258064516</real>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0600000000000001</real>
+	<key>columnCount</key>
+	<integer>120</integer>
 	<key>name</key>
 	<string>Custom</string>
+	<key>rowCount</key>
+	<integer>36</integer>
 	<key>shellExitAction</key>
 	<integer>1</integer>
 	<key>type</key>
