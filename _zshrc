@@ -1,14 +1,36 @@
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+# Customize
+PROMPT='❯ '
+EDITOR='vim'
+VISUAL='vim'
+PAGER='less'
+setopt CORRECT_ALL
 
-# Customizations
+# History
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_SAVE_NO_DUPS
+HISTSIZE=10000
+SAVEHIST=10000
 
+# Tools
 source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
 source "$(brew --prefix)/opt/fzf/shell/completion.zsh"
+source "${HOME}/.iterm2_shell_integration.zsh"
+eval "$(fasd --init auto)"
 
-alias f="mdfind -onlyin ."
+# Completion
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
+
+# Aliases
+alias j='fasd_cd -i'
+alias ls='ls -G'
+alias grep='grep --color=auto'
+alias fgrep='grep -F'
 alias mgl="git log --oneline --author='Ashish Gandhi'"
-alias fixservices="/System/Library/CoreServices/pbs -flush"
-alias fixopenwith="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user"
+alias f='mdfind -onlyin .'
