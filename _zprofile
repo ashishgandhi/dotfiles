@@ -4,10 +4,12 @@ export VISUAL='vim'
 export PAGER='less'
 
 export GOROOT=/opt/homebrew/opt/go/libexec
-export GOPATH=~/Developer/go
+export GOPATH=~/Developer/server/go:~/Developer/go
 export GOBIN=~/Developer/go/bin
 
 path=(
+  ${HOME}/Developer/server/devbox/client
+  /opt/dropbox-override/bin
   $GOBIN
   /opt/homebrew/opt/{go,python}/libexec/bin
   /opt/homebrew/{bin,sbin}
