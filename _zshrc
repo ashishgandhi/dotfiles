@@ -43,3 +43,13 @@ alias tmux='tmux -CC'
 alias f='mdfind -onlyin .'
 alias h='fc -liD'
 alias yd="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
+
+# Dropbox
+alias m='ssh -A mustang'
+alias t='ssh -CNfAD 8080 mustang'
+
+alias gestalt='mbzl tool //dropbox/yaps/gestalt'
+
+alias ad='arc diff origin/master'
+alias al='arc land --onto master --fast-lane'
+alias adl='ad && al'
