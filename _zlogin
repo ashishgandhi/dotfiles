@@ -1,8 +1,13 @@
-# Execute code that does not affect the current session in the background.
-{
-  # Compile the completion dump to increase startup speed.
-  zcompdump="${ZDOTDIR:-$HOME}/.zcompdump"
-  if [[ -s "$zcompdump" && (! -s "${zcompdump}.zwc" || "$zcompdump" -nt "${zcompdump}.zwc") ]]; then
-    zcompile "$zcompdump"
-  fi
-} &!
+GOROOT=/usr/local/opt/go/libexec
+GOPATH=~/Developer/go
+GOBIN=~/Developer/go/bin
+
+path=(
+  $GOBIN
+  /usr/local/opt/{go,python}/libexec/bin
+  /usr/local/{bin,sbin}
+  $path
+)
+
+# Deduplicate
+typeset -gU cdpath fpath mailpath path
