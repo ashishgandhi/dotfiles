@@ -3,7 +3,7 @@ PROMPT='❯ '
 EDITOR='vim'
 VISUAL='vim'
 PAGER='less'
-setopt CORRECT_ALL
+setopt CORRECT
 
 # History
 setopt SHARE_HISTORY
