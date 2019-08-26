@@ -15,8 +15,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 # Tools
-source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
-source "$(brew --prefix)/opt/fzf/shell/completion.zsh"
+source '/usr/local/opt/fzf/shell/key-bindings.zsh'
+source '/usr/local/opt/fzf/shell/completion.zsh'
 source "${HOME}/.iterm2_shell_integration.zsh"
 eval "$(fasd --init auto)"
 
