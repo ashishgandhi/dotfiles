@@ -1,9 +1,5 @@
 # Customize
-LANG='en_US.UTF-8'
 PROMPT='❯ '
-EDITOR='vim'
-VISUAL='vim'
-PAGER='less'
 setopt CORRECT
 
 # History
