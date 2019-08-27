@@ -124,6 +124,10 @@ defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
 defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile_selection -int 1
 defaults write com.googlecode.iterm2 NoSyncTipsDisabled -bool YES
 defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile -bool YES
+defaults write com.googlecode.iterm2 NoSyncDoNotWarnBeforeMultilinePaste -bool YES
+defaults write com.googlecode.iterm2 NoSyncDoNotWarnBeforeMultilinePaste_selection -int 0
+defaults write com.googlecode.iterm2 NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt -bool YES
+defaults write com.googlecode.iterm2 NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection -int 1
 defaults write com.googlecode.iterm2 SUEnableAutomaticChecks -bool YES
 defaults write com.googlecode.iterm2 AlternateMouseScroll -bool YES
 
