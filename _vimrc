@@ -171,5 +171,5 @@ set incsearch               " Incrementally search while typing a /regex
 
 " Customize UI
 colorscheme codedark
-set guifont=Menlo\ Regular:h13
+set guifont=SF\ Mono\ Regular:h13
 set guioptions=
