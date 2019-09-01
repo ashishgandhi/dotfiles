@@ -5,7 +5,6 @@ let mapleader=","
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-
 Plug 'rstacruz/vim-closer'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
@@ -14,8 +13,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'Valloric/YouCompleteMe'
-Plug 'altercation/vim-colors-solarized'
-Plug 'tomasiser/vim-code-dark'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -170,6 +167,6 @@ set hlsearch                " Highlight searches by default
 set incsearch               " Incrementally search while typing a /regex
 
 " Customize UI
-colorscheme codedark
+colorscheme default
 set guifont=SF\ Mono\ Regular:h13
 set guioptions=
