@@ -1,5 +1,11 @@
 #!/bin/bash -e
 
+# Install SF Mono
+loc='/tmp/SF-Mono.dmg'
+curl -o $loc https://developer.apple.com/design/downloads/SF-Mono.dmg
+hdiutil attach $loc
+open '/Volumes/SFMonoFonts/SF Mono Fonts.pkg'
+
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go htop ipython jq mas ncdu python ripgrep tig youtube-dl
