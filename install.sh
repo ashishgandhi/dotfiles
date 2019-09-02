@@ -4,7 +4,9 @@
 loc='/tmp/SF-Mono.dmg'
 curl -o $loc https://developer.apple.com/design/downloads/SF-Mono.dmg
 hdiutil attach $loc
-open '/Volumes/SFMonoFonts/SF Mono Fonts.pkg'
+mnt='/Volumes/SFMonoFonts'
+sudo installer -verbose -pkg "${mnt}/SF Mono Fonts.pkg" -target /
+hdiutil detach $mnt
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
