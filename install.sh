@@ -1,5 +1,24 @@
 #!/bin/bash -e
 
+# Setup zsh
+function link_file {
+    src="${PWD}/$1"
+    dst="${HOME}/${1/_/.}"
+
+    if [ -e "${dst}" ] && [ ! -L "${dst}" ]; then
+        mv $dst $dst.bak
+    fi
+
+    ln -sfh ${src} ${dst}
+}
+
+for i in _*
+do
+    link_file $i
+done
+
+exec $SHELL
+
 # Install SF Mono
 loc='/tmp/SF-Mono.dmg'
 curl -o $loc https://developer.apple.com/design/downloads/SF-Mono.dmg
