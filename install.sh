@@ -110,7 +110,7 @@ defaults write org.vim.MacVim MMLastWindowClosedBehavior -int 2
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
-./install.py --clang-completer
+./install.py --go-completer --java-completer --clang-completer
 
 # Tweetbot
 defaults write com.tapbots.Tweetbot3Mac syncType -int 1
