@@ -32,10 +32,10 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go htop ipython jq mas ncdu python ripgrep tig youtube-dl
 
 # Install apps
-brew cask install 1password alfred appcleaner dash fork google-chrome iina intellij-idea iterm2 macvim paw spotify sublime-text
+brew cask install 1password alfred appcleaner dash fork iina intellij-idea iterm2 macvim paw sublime-text
 
 # No longer installing
-# brew cask uninstall alfred bartender homebrew/cask-versions/sequel-pro-nightly iterm2 numi sourcetree
+# brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly numi sourcetree spotify
 
 # Install Mac App Store apps
 # Amphetamine, DaisyDisk, Fantastical 2, JSON Editor, Kaleidoscope, Keka, Magnet, Monodraw, Paste, Reeder, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
