@@ -61,6 +61,13 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
 defaults write com.apple.universalaccess showWindowTitlebarIcons -bool YES
 
+# Proxy
+pac=https://raw.githubusercontent.com/ashishgandhi/dotfiles/company/dropbox/_config/proxy/proxy.pac
+networksetup -listallnetworkservices | fgrep -v '*' | while read s
+do
+    networksetup -setautoproxyurl $s $pac;
+done
+
 # Menu Bar
 defaults write com.apple.systemuiserver menuExtras -array \
 "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
