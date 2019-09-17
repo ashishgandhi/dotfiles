@@ -144,6 +144,10 @@ defaults write com.torusknot.SourceTreeNotMAS bookmarksClosedOnStartup -bool YES
 # IntelliJ
 defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
 
+# PCalc
+defaults write uk.co.tla-systems.pcalc HorizontalLayoutID_V4 -string "uk.co.tla-systems.pcalc.layout.programminghorizontal"
+defaults write uk.co.tla-systems.pcalc ShowTape_V4 -bool true
+
 # Numi
 defaults write com.dmitrynikolaev.numi nightTheme -bool true
 defaults write com.dmitrynikolaev.numi menuBarMode -bool true
