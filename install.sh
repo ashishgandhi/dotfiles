@@ -157,7 +157,6 @@ defaults write com.googlecode.iterm2 NoSyncDoNotWarnBeforeMultilinePaste_selecti
 defaults write com.googlecode.iterm2 NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt -bool YES
 defaults write com.googlecode.iterm2 NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection -int 1
 defaults write com.googlecode.iterm2 SUEnableAutomaticChecks -bool YES
-defaults write com.googlecode.iterm2 AlternateMouseScroll -bool YES
 
 # Terminal
 osascript <<EOD
