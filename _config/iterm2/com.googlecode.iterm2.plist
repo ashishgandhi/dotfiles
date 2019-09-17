@@ -859,6 +859,8 @@
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
+	<key>OpenTmuxWindowsIn</key>
+	<integer>1</integer>
 	<key>PrefsCustomFolder</key>
 	<string>~/.config/iterm2</string>
 	<key>PromptOnQuit</key>

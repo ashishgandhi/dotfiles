@@ -32,4 +32,5 @@ alias ls='ls -G'
 alias grep='grep --color=auto'
 alias fgrep='grep -F'
 alias mgl="git log --oneline --author='Ashish Gandhi'"
+alias tmux='tmux -CC'
 alias f='mdfind -onlyin .'
