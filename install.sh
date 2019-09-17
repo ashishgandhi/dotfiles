@@ -32,7 +32,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go htop ipython jq mas ncdu python ripgrep tig youtube-dl
 
 # Install apps
-brew cask install 1password alfred appcleaner dash fork iina intellij-idea iterm2 macvim paw sublime-text
+brew cask install 1password alfred appcleaner dash fork iina intellij-idea iterm2 macvim paw sublime-text textmate
 
 # No longer installing
 # brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly numi sourcetree spotify
@@ -111,6 +111,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 vim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py --go-completer --java-completer --clang-completer
+
+# TextMate
+defaults write com.macromates.TextMate fileBrowserPlacement -string "left"
 
 # Tweetbot
 defaults write com.tapbots.Tweetbot3Mac syncType -int 1
