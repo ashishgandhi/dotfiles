@@ -17,6 +17,7 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+	noprefix = true
 [push]
 	default = simple
 [fetch]
