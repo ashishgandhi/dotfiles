@@ -165,6 +165,8 @@ defaults write com.googlecode.iterm2 NoSyncDoNotWarnBeforePastingOneLineEndingIn
 defaults write com.googlecode.iterm2 NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection -int 1
 defaults write com.googlecode.iterm2 NoSyncNewTabFromTmuxOpensTmux -bool YES
 defaults write com.googlecode.iterm2 NoSyncNewTabFromTmuxOpensTmux_selection -int 0
+defaults write com.googlecode.iterm2 NoSyncNewWindowFromTmuxOpensTmux -bool YES
+defaults write com.googlecode.iterm2 NoSyncNewWindowFromTmuxOpensTmux_selection -int 1
 defaults write com.googlecode.iterm2 SUEnableAutomaticChecks -bool YES
 
 # Terminal
