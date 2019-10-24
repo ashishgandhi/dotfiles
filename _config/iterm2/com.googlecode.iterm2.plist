@@ -4,6 +4,10 @@
 <dict>
 	<key>AlternateMouseScroll</key>
 	<true/>
+	<key>ClosingTmuxWindowKillsTmuxWindows</key>
+	<true/>
+	<key>ClosingTmuxWindowKillsTmuxWindows_selection</key>
+	<integer>1</integer>
 	<key>Default Bookmark Guid</key>
 	<string>AE991A7E-19E6-425E-869F-BF0D49D0E564</string>
 	<key>NeverWarnAboutShortLivedSessions_AE991A7E-19E6-425E-869F-BF0D49D0E564</key>
