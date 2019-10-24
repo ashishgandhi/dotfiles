@@ -26,6 +26,14 @@ for dump in ~/.zcompdump(N.mh+24); do
 done
 compinit -C
 
+# For tmux (on servers)
+auth_sock_ln="$HOME/.ssh/ssh_auth_sock"
+if ! [ $SSH_AUTH_SOCK = $auth_sock_ln ]
+then
+    ln -sf $SSH_AUTH_SOCK $auth_sock_ln
+fi
+export SSH_AUTH_SOCK=$auth_sock_ln
+
 # Aliases
 alias j='fasd_cd -i'
 alias ls='ls -G'
