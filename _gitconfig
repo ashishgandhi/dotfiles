@@ -24,3 +24,5 @@
 	prune = true
 [pull]
 	rebase = true
+[alias]
+	fix = commit -a --amend --no-edit
