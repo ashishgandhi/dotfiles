@@ -52,6 +52,7 @@ defaults write -g AppleKeyboardUIMode -int 3 # Full Keyboard Access: All control
 defaults write -g com.apple.trackpad.scaling -float 3
 defaults write -g InitialKeyRepeat -int 25
 defaults write -g KeyRepeat -int 2
+defaults write -g NSQuitAlwaysKeepsWindows -bool YES
 # defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
 
 # Menu Bar
