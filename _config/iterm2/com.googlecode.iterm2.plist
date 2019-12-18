@@ -873,7 +873,9 @@
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
+	<key>StatusBarPosition</key>
+	<integer>1</integer>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>5</integer>
+	<integer>4</integer>
 </dict>
 </plist>
