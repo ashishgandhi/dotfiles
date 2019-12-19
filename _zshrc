@@ -46,7 +46,7 @@ alias yd="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
 
 # Dropbox
 alias m='ssh -A mustang'
-alias t='ssh -CNfAD 8080 mustang'
+alias t='ssh -qCNfAD 8080 mustang'
 
 alias gestalt='mbzl tool //dropbox/yaps/gestalt'
 
