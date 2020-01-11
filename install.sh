@@ -38,8 +38,8 @@ brew cask install 1password alfred appcleaner dash fork iina intellij-idea iterm
 # brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly numi sourcetree spotify
 
 # Install Mac App Store apps
-# Amphetamine, DaisyDisk, Fantastical 2, JSON Editor, Kaleidoscope, Keka, Magnet, Monodraw, Paste, Reeder, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
-mas install 937984704 411643860 975937182 567740330 587512244 470158793 441258766 920404675 967805235 880001334 1176895641 904280696 1384080005 1147396723 1320666476
+# Amphetamine, DaisyDisk, Fantastical 2, Front and Center, JSON Editor, Kaleidoscope, Keka, Magnet, Monodraw, Paste, Reeder, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
+mas install 937984704 411643860 975937182 1493996622 567740330 587512244 470158793 441258766 920404675 967805235 880001334 1176895641 904280696 1384080005 1147396723 1320666476
 
 # No longer installing
 # Pocket, PomTimer, Silicio, The Unarchiver, iStat Menus
@@ -123,6 +123,12 @@ defaults write com.tapbots.Tweetbot3Mac autoplayVideoTimeline -bool NO
 # Reeder
 defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
 defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
+
+# Front and Center
+defaults write co.hypercritical.Front-and-Center defaultBehavior -int 1
+defaults write co.hypercritical.Front-and-Center launchOnLogin -bool YES
+defaults write co.hypercritical.Front-and-Center showDockIcon -bool NO
+defaults write co.hypercritical.Front-and-Center showMenuBarIcon -bool YES
 
 # Fantastical
 defaults write com.flexibits.fantastical2.mac HideStatusItem -bool YES
