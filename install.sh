@@ -1,4 +1,6 @@
-#!/bin/bash -e
+#!/bin/zsh -e
+
+chsh -s zsh
 
 # Setup zsh
 function link_file {
