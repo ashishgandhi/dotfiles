@@ -151,15 +151,15 @@ defaults write com.torusknot.SourceTreeNotMAS checkRemoteStatus -bool NO
 defaults write com.torusknot.SourceTreeNotMAS bookmarksClosedOnStartup -bool YES
 
 # IntelliJ
-defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
+defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool NO
 
 # PCalc
 defaults write uk.co.tla-systems.pcalc HorizontalLayoutID_V4 -string "uk.co.tla-systems.pcalc.layout.programminghorizontal"
-defaults write uk.co.tla-systems.pcalc ShowTape_V4 -bool true
+defaults write uk.co.tla-systems.pcalc ShowTape_V4 -bool YES
 
 # Numi
-defaults write com.dmitrynikolaev.numi nightTheme -bool true
-defaults write com.dmitrynikolaev.numi menuBarMode -bool true
+defaults write com.dmitrynikolaev.numi nightTheme -bool NO
+defaults write com.dmitrynikolaev.numi menuBarMode -bool NO
 
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
