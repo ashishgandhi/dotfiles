@@ -108,6 +108,16 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock showAppExposeGestureEnabled -bool YES
 killall Dock
 
+# Safari
+# Under Privacy needs Full Disk Access
+defaults write com.apple.Safari AutoFillPasswords -bool NO
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool YES
+defaults write com.apple.Safari IncludeDevelopMenu -bool YES
+defaults write com.apple.Safari ShowIconsInTabs -bool YES
+defaults write com.apple.Safari ReadingListSaveArticlesOfflineAutomatically -bool YES
+defaults write com.apple.Safari ShowOverlayStatusBar -bool YES
+defaults write -g WebKitDeveloperExtras -bool YES
+
 # MacVim
 defaults write org.vim.MacVim MMLastWindowClosedBehavior -int 2
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
