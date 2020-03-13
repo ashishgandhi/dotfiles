@@ -34,7 +34,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go htop ipython jq mas ncdu python ripgrep tig tldr youtube-dl
 
 # Install apps
-brew cask install 1password alfred appcleaner dash fork iina intellij-idea iterm2 macvim paw sublime-text textmate
+brew cask install 1password alfred appcleaner dash fork iina intellij-idea iterm2 macvim paw sublime-text suspicious-package textmate
 
 # No longer installing
 # brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly numi sourcetree spotify
