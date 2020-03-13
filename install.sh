@@ -118,6 +118,10 @@ defaults write com.apple.Safari ReadingListSaveArticlesOfflineAutomatically -boo
 defaults write com.apple.Safari ShowOverlayStatusBar -bool YES
 defaults write -g WebKitDeveloperExtras -bool YES
 
+# Contacts
+# Under Privacy needs Contacts
+defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstName sortingLastName"
+
 # MacVim
 defaults write org.vim.MacVim MMLastWindowClosedBehavior -int 2
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
