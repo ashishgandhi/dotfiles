@@ -175,6 +175,10 @@ defaults write uk.co.tla-systems.pcalc ShowTape_V4 -bool YES
 defaults write com.dmitrynikolaev.numi nightTheme -bool NO
 defaults write com.dmitrynikolaev.numi menuBarMode -bool NO
 
+# AppCleaner
+defaults write net.freemacsoft.AppCleaner SUEnableAutomaticChecks -bool YES
+defaults write net.freemacsoft.AppCleaner SUAutomaticallyUpdate -bool YES
+
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
