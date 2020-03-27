@@ -40,8 +40,8 @@ brew cask install 1password alfred appcleaner dash fork iina intellij-idea iterm
 # brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly numi sourcetree spotify
 
 # Install Mac App Store apps
-# Amphetamine, DaisyDisk, Front and Center, JSON Editor, Kaleidoscope, Keka, Magnet, Monodraw, Paste, Reeder, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
-mas install 937984704 411643860 1493996622 567740330 587512244 470158793 441258766 920404675 967805235 1449412482 1176895641 904280696 1384080005 1147396723 1320666476
+# Amphetamine, DaisyDisk, Front and Center, JSON Editor, Kaleidoscope, Keka, Magnet, Microsoft To Do, Monodraw, Paste, Reeder, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
+mas install 937984704 411643860 1493996622 567740330 587512244 470158793 441258766 1274495053 920404675 967805235 1449412482 1176895641 904280696 1384080005 1147396723 1320666476
 
 # No longer installing
 # Fantastical 2, Pocket, PomTimer, Silicio, The Unarchiver, iStat Menus
