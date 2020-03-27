@@ -83,7 +83,6 @@ killall Finder
 # Dock
 defaults write com.apple.dock tilesize -int 36
 defaults write com.apple.dock launchanim -bool NO
-defaults write com.apple.dock mru-spaces -bool NO
 defaults write com.apple.dock magnification -bool NO
 defaults write com.apple.dock show-recents -bool NO
 killall Dock
@@ -107,6 +106,8 @@ killall Dock
 defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock showAppExposeGestureEnabled -bool YES
+defaults write com.apple.dock mru-spaces -bool NO
+defaults write com.apple.dock expose-group-apps -bool YES
 killall Dock
 
 # Safari
