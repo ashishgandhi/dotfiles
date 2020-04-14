@@ -27,7 +27,7 @@ hdiutil detach $mnt
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
+brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas maven ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
 brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 paw numi rectangle signal sublime-text suspicious-package textmate
