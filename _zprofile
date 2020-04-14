@@ -7,6 +7,8 @@ export GOROOT=/opt/homebrew/opt/go/libexec
 export GOPATH=~/Developer/server/go:~/Developer/go
 export GOBIN=~/Developer/go/bin
 
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
 path=(
   ${HOME}/Developer/server/devbox/client
   /opt/dropbox-override/bin

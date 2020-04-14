@@ -36,7 +36,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew analytics off
 
 # Install packages
-brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
+brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas maven ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
 brew install --cask appcleaner dash fork iina intellij-idea iterm2 paw rectangle signal sublime-text suspicious-package
