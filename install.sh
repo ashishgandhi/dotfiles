@@ -1,7 +1,5 @@
 #!/bin/zsh -e
 
-chsh -s zsh
-
 # Setup zsh
 function link_file {
     src="${PWD}/$1"
@@ -18,8 +16,6 @@ for i in _*
 do
     link_file $i
 done
-
-exec $SHELL
 
 # Install SF Mono
 loc='/tmp/SF-Mono.dmg'
@@ -46,6 +42,9 @@ mas install 937984704 411643860 1493996622 567740330 587512244 470158793 4412587
 # No longer installing
 # Fantastical 2, Pocket, PomTimer, Silicio, The Unarchiver, iStat Menus
 # mas uninstall 975937182 568494494 843107699 933627574 425424353 1319778037
+
+# Update path and other essential environment variables
+source ~/.zprofile
 
 # Preferences
 
