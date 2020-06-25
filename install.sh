@@ -147,23 +147,8 @@ defaults write co.hypercritical.Front-and-Center launchOnLogin -bool YES
 defaults write co.hypercritical.Front-and-Center showDockIcon -bool NO
 defaults write co.hypercritical.Front-and-Center showMenuBarIcon -bool YES
 
-# Fantastical
-defaults write com.flexibits.fantastical2.mac HideStatusItem -bool YES
-defaults write com.flexibits.fantastical2.mac ListShows -int 1
-defaults write com.flexibits.fantastical2.mac ShowCalendarWeeks -bool YES
-defaults write com.flexibits.fantastical2.mac IgnoreQuitWarning -bool YES
-
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
-
-# Sourcetree
-defaults write com.torusknot.SourceTreeNotMAS fileStatusStagingViewMode -int 1
-defaults write com.torusknot.SourceTreeNotMAS terminalApp -int 2
-defaults write com.torusknot.SourceTreeNotMAS windowRestorationMethod -int 3
-defaults write com.torusknot.SourceTreeNotMAS createBookmarksOnOpenRepo -bool NO
-defaults write com.torusknot.SourceTreeNotMAS agreedToUpdateConfig -bool NO
-defaults write com.torusknot.SourceTreeNotMAS checkRemoteStatus -bool NO
-defaults write com.torusknot.SourceTreeNotMAS bookmarksClosedOnStartup -bool YES
 
 # IntelliJ
 defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool NO
