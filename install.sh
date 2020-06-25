@@ -49,7 +49,7 @@ source ~/.zprofile
 # Preferences
 
 # Global
-defaults write -g AppleKeyboardUIMode -int 3 # Full Keyboard Access: All controls
+defaults write -g AppleKeyboardUIMode -int 3
 defaults write -g com.apple.trackpad.scaling -float 3
 defaults write -g InitialKeyRepeat -int 25
 defaults write -g KeyRepeat -int 2
@@ -73,7 +73,7 @@ killall SystemUIServer
 defaults write com.apple.finder ShowPathbar -bool YES
 defaults write com.apple.finder ShowStatusBar -bool YES
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
-defaults write com.apple.finder FXPreferredViewStyle -string "icnv" # Nlsv, clmv, Flwv
+defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
 defaults write com.apple.finder NewWindowTarget "PfHm"
 defaults write com.apple.finder NewWindowTargetPath "file://$HOME/"
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
