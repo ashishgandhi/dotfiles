@@ -45,7 +45,7 @@ alias tm='t && m'
 alias gestalt='mbzl tool //dropbox/yaps/gestalt'
 
 alias ad='arc diff origin/master'
-alias al='arc land --onto master --fast-lane'
+alias al='arc land --onto master'
 alias adl='ad && al'
 alias gpb="git push origin HEAD:features/ashishg/push-branch -f"
 
