@@ -30,18 +30,18 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr youtube-dl
 
 # Install apps
-brew cask install 1password appcleaner dash fork iina intellij-idea iterm2 macvim paw numi signal sublime-text suspicious-package textmate
+brew cask install 1password appcleaner dash fork iina intellij-idea iterm2 macvim paw numi rectangle signal sublime-text suspicious-package textmate
 
 # No longer installing
 # brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly sourcetree spotify
 
 # Install Mac App Store apps
-# Amphetamine, DaisyDisk, Front and Center, JSON Editor, Kaleidoscope, Keka, Magnet, Microsoft To Do, Monodraw, Paste, Reeder, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
-mas install 937984704 411643860 1493996622 567740330 587512244 470158793 441258766 1274495053 920404675 967805235 1449412482 1176895641 904280696 1384080005 1147396723 1320666476
+# Amphetamine, DaisyDisk, Fantastical 2, Front and Center, JSON Editor, Kaleidoscope, Keka, Microsoft To Do, Monodraw, Paste, Reeder, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
+mas install 937984704 411643860 975937182 1493996622 567740330 587512244 470158793 1274495053 920404675 967805235 1449412482 1176895641 904280696 1384080005 1147396723 1320666476
 
 # No longer installing
-# Fantastical 2, Pocket, PomTimer, Silicio, The Unarchiver, iStat Menus
-# mas uninstall 975937182 568494494 843107699 933627574 425424353 1319778037
+# Magnet, Pocket, PomTimer, Silicio, The Unarchiver, iStat Menus
+# mas uninstall 441258766 568494494 843107699 933627574 425424353 1319778037
 
 # Update path and other essential environment variables
 source ~/.zprofile
@@ -164,6 +164,11 @@ defaults write com.dmitrynikolaev.numi menuBarMode -bool NO
 # AppCleaner
 defaults write net.freemacsoft.AppCleaner SUEnableAutomaticChecks -bool YES
 defaults write net.freemacsoft.AppCleaner SUAutomaticallyUpdate -bool YES
+
+# Rectangle
+defaults write com.knollsoft.Rectangle SUEnableAutomaticChecks -bool YES
+defaults write com.knollsoft.Rectangle launchOnLogin -bool YES
+defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool YES
 
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
