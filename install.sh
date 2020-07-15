@@ -142,7 +142,7 @@ defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
 defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
 
 # Front and Center
-defaults write co.hypercritical.Front-and-Center defaultBehavior -int 1
+defaults write co.hypercritical.Front-and-Center defaultBehavior -int 2
 defaults write co.hypercritical.Front-and-Center launchOnLogin -bool YES
 defaults write co.hypercritical.Front-and-Center showDockIcon -bool NO
 defaults write co.hypercritical.Front-and-Center showMenuBarIcon -bool YES
