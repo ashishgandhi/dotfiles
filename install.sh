@@ -58,10 +58,10 @@ defaults write -g NSQuitAlwaysKeepsWindows -bool YES
 # defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
 
 # Proxy
-pac=https://raw.githubusercontent.com/ashishgandhi/dotfiles/company/dropbox/_config/proxy/proxy.pac
 networksetup -listallnetworkservices | fgrep -v '*' | while read s
 do
-    networksetup -setautoproxyurl $s $pac;
+    networksetup -setautoproxyurl $s https://raw.githubusercontent.com/ashishgandhi/dotfiles/company/dropbox/_config/proxy/proxy.pac;
+    networksetup -setsearchdomains $s corp.dropbox.com.
 done
 
 # Menu Bar
