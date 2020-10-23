@@ -36,7 +36,7 @@ export SSH_AUTH_SOCK=$auth_sock_ln
 # Aliases
 alias j='fasd_cd -i'
 alias ls='ls -G'
-alias grep='grep --color=auto'
+alias grep='grep -E --color=auto'
 alias fgrep='grep -F'
 alias mgl="git log --oneline --author='Ashish Gandhi'"
 alias tmux='tmux -CC'
