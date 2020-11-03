@@ -11,7 +11,6 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 path=(
   ${HOME}/Developer/server/devbox/client
-  /opt/dropbox-override/bin
   $GOBIN
   /opt/homebrew/opt/{go,python}/libexec/bin
   /opt/homebrew/{bin,sbin}
