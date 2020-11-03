@@ -27,10 +27,10 @@ hdiutil detach $mnt
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr youtube-dl
+brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew cask install 1password appcleaner dash fork iina intellij-idea iterm2 macvim paw numi rectangle signal sublime-text suspicious-package textmate
+brew cask install 1password appcleaner dash fork iina intellij-idea iterm2 paw numi rectangle signal sublime-text suspicious-package textmate
 
 # No longer installing
 # brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly sourcetree spotify
@@ -123,8 +123,7 @@ defaults write -g WebKitDeveloperExtras -bool YES
 # Under Privacy needs Contacts
 defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstName sortingLastName"
 
-# MacVim
-defaults write org.vim.MacVim MMLastWindowClosedBehavior -int 2
+# Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
