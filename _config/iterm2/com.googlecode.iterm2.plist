@@ -830,6 +830,6 @@
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>4</integer>
+	<integer>5</integer>
 </dict>
 </plist>
