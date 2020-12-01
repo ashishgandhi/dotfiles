@@ -169,6 +169,9 @@ defaults write com.knollsoft.Rectangle SUEnableAutomaticChecks -bool YES
 defaults write com.knollsoft.Rectangle launchOnLogin -bool YES
 defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool YES
 
+# Things
+defaults write com.culturedcode.ThingsMac CCDockCountType -int 3
+
 # Podcasts
 defaults write com.apple.podcasts MTPodcastUpdateIntervalDefault -int 0
 defaults write com.apple.podcasts MTPodcastAutoDownloadStateDefaultKey -int 1
