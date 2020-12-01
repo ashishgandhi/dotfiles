@@ -169,6 +169,16 @@ defaults write com.knollsoft.Rectangle SUEnableAutomaticChecks -bool YES
 defaults write com.knollsoft.Rectangle launchOnLogin -bool YES
 defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool YES
 
+# Podcasts
+defaults write com.apple.podcasts MTPodcastUpdateIntervalDefault -int 0
+defaults write com.apple.podcasts MTPodcastAutoDownloadStateDefaultKey -int 1
+defaults write com.apple.podcasts MTRemoteSkipInsteadOfNextTrackDefault -bool YES
+defaults write com.apple.podcasts MTSkipBackwardsIntervalDefault -int 15
+defaults write com.apple.podcasts MTSkipForwardIntervalDefault -int 30
+defaults write com.apple.podcasts MTContinuousPlaybackEnabled -bool YES
+defaults write com.apple.podcasts MTSyncSubscriptions -bool YES
+defaults write com.apple.podcasts MTPodcastDeletePlayedEpisodesDefaultKey -bool YES
+
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
