@@ -117,6 +117,10 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool YES
 defaults write com.apple.Safari ShowIconsInTabs -bool YES
 defaults write com.apple.Safari ReadingListSaveArticlesOfflineAutomatically -bool YES
 defaults write com.apple.Safari ShowOverlayStatusBar -bool YES
+defaults write com.apple.Safari AlwaysShowTabBar -bool YES
+defaults write com.apple.Safari PrintHeadersAndFooters -bool NO
+defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool YES
+defaults write com.apple.Safari CanPromptForPushNotifications -bool NO
 defaults write -g WebKitDeveloperExtras -bool YES
 
 # Contacts
