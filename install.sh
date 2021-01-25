@@ -115,6 +115,13 @@ defaults write com.apple.Safari AutoFillPasswords -bool NO
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool YES
 defaults write com.apple.Safari IncludeDevelopMenu -bool YES
 defaults write com.apple.Safari ShowIconsInTabs -bool YES
+defaults write com.apple.Safari ShowFavorites -bool YES
+defaults write com.apple.Safari ShowCloudTabsInFavorites -bool YES
+defaults write com.apple.Safari ShowPrivacyReportInFavorites -bool YES
+defaults write com.apple.Safari ShowBackgroundImageInFavorites -bool NO
+defaults write com.apple.Safari ShowFrequentlyVisitedSites -bool NO
+defaults write com.apple.Safari ShowSiriSuggestionsPreference -bool NO
+defaults write com.apple.Safari ShowReadingListInFavorites -bool NO
 defaults write com.apple.Safari ReadingListSaveArticlesOfflineAutomatically -bool YES
 defaults write com.apple.Safari ShowOverlayStatusBar -bool YES
 defaults write com.apple.Safari AlwaysShowTabBar -bool YES
