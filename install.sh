@@ -54,8 +54,8 @@ defaults write -g com.apple.trackpad.scaling -float 3
 defaults write -g InitialKeyRepeat -int 25
 defaults write -g KeyRepeat -int 2
 defaults write -g NSQuitAlwaysKeepsWindows -bool YES
-# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
-# defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
 
 # Menu Bar
 defaults write com.apple.systemuiserver menuExtras -array \
