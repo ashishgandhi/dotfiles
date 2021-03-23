@@ -180,6 +180,7 @@ defaults write net.freemacsoft.AppCleaner SUAutomaticallyUpdate -bool YES
 defaults write com.knollsoft.Rectangle SUEnableAutomaticChecks -bool YES
 defaults write com.knollsoft.Rectangle launchOnLogin -bool YES
 defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool YES
+defaults write com.knollsoft.Rectangle windowSnapping -int 2
 
 # Things
 defaults write com.culturedcode.ThingsMac CCDockCountType -int 3
