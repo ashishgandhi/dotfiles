@@ -27,7 +27,7 @@ hdiutil detach $mnt
 
 # Install packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
+brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu netnewswire python ripgrep tig tldr vim youtube-dl
 
 # Install apps
 brew install --cask 1password appcleaner dash fork hex-fiend iina intellij-idea iterm2 paw rectangle signal soulver sublime-text suspicious-package textmate
@@ -151,6 +151,11 @@ defaults write com.tapbots.Tweetbot3Mac autoplayVideoTimeline -bool NO
 # Reeder
 defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
 defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
+
+# NetNewsWire
+defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool YES
+defaults write com.ranchero.NetNewsWire-Evergreen articleTextSize -int 2
+defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
 
 # Front and Center
 defaults write co.hypercritical.Front-and-Center defaultBehavior -int 2
