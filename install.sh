@@ -191,7 +191,6 @@ defaults write com.knollsoft.Rectangle windowSnapping -int 2
 defaults write com.culturedcode.ThingsMac CCDockCountType -int 3
 
 # Podcasts
-defaults write com.apple.podcasts MTPodcastUpdateIntervalDefault -int 0
 defaults write com.apple.podcasts MTPodcastAutoDownloadStateDefaultKey -int 1
 defaults write com.apple.podcasts MTRemoteSkipInsteadOfNextTrackDefault -bool YES
 defaults write com.apple.podcasts MTSkipBackwardsIntervalDefault -int 15
