@@ -30,14 +30,14 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu netnewswire python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask 1password appcleaner dash fork hex-fiend iina intellij-idea iterm2 paw rectangle signal soulver sublime-text suspicious-package textmate
+brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 paw rectangle signal soulver sublime-text suspicious-package textmate
 
 # No longer installing
 # brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly sourcetree spotify
 
 # Install Mac App Store apps
-# Amphetamine, DaisyDisk, Fantastical 2, Flow, Front and Center, JSON Editor, Kaleidoscope, Keka, Microsoft To Do, Monodraw, Paste, Reeder 5, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
-mas install 937984704 411643860 975937182 1423210932 1493996622 1544743900 567740330 587512244 470158793 1274495053 920404675 967805235 1529448980 1176895641 904280696 1384080005 1147396723 1320666476
+# Amphetamine, DaisyDisk, Fantastical 2, Flow, Front and Center, Hex Fiend, JSON Editor, Kaleidoscope, Keka, Microsoft To Do, Monodraw, Paste, Reeder 5, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
+mas install 937984704 411643860 975937182 1423210932 1493996622 1544743900 1342896380 567740330 587512244 470158793 1274495053 920404675 967805235 1529448980 1176895641 904280696 1384080005 1147396723 1320666476
 
 # No longer installing
 # Magnet, Pocket, PomTimer, Silicio, The Unarchiver, iStat Menus
