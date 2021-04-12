@@ -156,6 +156,7 @@ defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
 defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool YES
 defaults write com.ranchero.NetNewsWire-Evergreen articleTextSize -int 2
 defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
+defaults write com.ranchero.NetNewsWire-Evergreen timelineSortDirection -int -1
 
 # Front and Center
 defaults write co.hypercritical.Front-and-Center defaultBehavior -int 2
