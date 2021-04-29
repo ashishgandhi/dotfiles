@@ -5,6 +5,7 @@ function FindProxyForURL(url, host)
         "sjc*-*-*",
         "iad*-*-*",
         "ttd*-i-*",
+        "*.susanin.dbxnw.net",
     ];
 
     for (var i = 0; i < hosts.length; i++) {
