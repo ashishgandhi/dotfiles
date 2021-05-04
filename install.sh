@@ -30,7 +30,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu netnewswire python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 paw rectangle signal soulver sublime-text suspicious-package textmate
+brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 paw raycast rectangle signal soulver sublime-text suspicious-package textmate
 
 # No longer installing
 # brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly sourcetree spotify
@@ -199,6 +199,11 @@ defaults write com.apple.podcasts MTSkipForwardIntervalDefault -int 30
 defaults write com.apple.podcasts MTContinuousPlaybackEnabled -bool YES
 defaults write com.apple.podcasts MTSyncSubscriptions -bool YES
 defaults write com.apple.podcasts MTPodcastDeletePlayedEpisodesDefaultKey -bool YES
+
+# Raycast
+defaults write com.raycast.macos raycastGlobalHotkey -string "Command-49"
+defaults write com.raycast.macos boostRankingByPreviousSearches -bool YES
+defaults write com.raycast.macos raycastUI_preferredTextSize -string "large"
 
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
