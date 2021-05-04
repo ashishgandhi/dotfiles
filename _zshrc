@@ -38,7 +38,7 @@ alias ybest="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
 alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Helpers/jsc"
 
 # Dropbox
-shell_host="pdx-shell-2"
+shell_host="di-shell-1"
 alias t="ssh -qCNfAD 8080 $shell_host && ssh -A $shell_host"
 
 alias gestalt='mbzl tool //dropbox/yaps/gestalt'
