@@ -205,6 +205,12 @@ defaults write com.raycast.macos raycastGlobalHotkey -string "Command-49"
 defaults write com.raycast.macos boostRankingByPreviousSearches -bool YES
 defaults write com.raycast.macos raycastUI_preferredTextSize -string "large"
 
+# Siri
+defaults write com.apple.Siri HotkeyTag -int 4
+defaults write com.apple.Siri StatusMenuVisible -bool NO
+defaults write com.apple.Siri TypeToSiriEnabled -bool YES
+defaults write com.apple.Siri VoiceTriggerUserEnabled -bool YES
+
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
