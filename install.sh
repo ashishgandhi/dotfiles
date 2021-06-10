@@ -36,8 +36,8 @@ brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 paw
 # brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly sourcetree spotify
 
 # Install Mac App Store apps
-# Amphetamine, DaisyDisk, Fantastical 2, Flow, Front and Center, Hex Fiend, JSON Editor, Kaleidoscope, Keka, Microsoft To Do, Monodraw, Paste, Reeder 5, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
-mas install 937984704 411643860 975937182 1423210932 1493996622 1544743900 1342896380 567740330 587512244 470158793 1274495053 920404675 967805235 1529448980 1176895641 904280696 1384080005 1147396723 1320666476
+# Amphetamine, CotEditor, DaisyDisk, Fantastical 2, Flow, Front and Center, Hex Fiend, JSON Editor, Kaleidoscope, Keka, Microsoft To Do, Monodraw, Paste, Reeder 5, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
+mas install 937984704 1024640650 411643860 975937182 1423210932 1493996622 1544743900 1342896380 567740330 587512244 470158793 1274495053 920404675 967805235 1529448980 1176895641 904280696 1384080005 1147396723 1320666476
 
 # No longer installing
 # Magnet, Pocket, PomTimer, Silicio, The Unarchiver, iStat Menus
@@ -210,6 +210,10 @@ defaults write com.apple.Siri HotkeyTag -int 4
 defaults write com.apple.Siri StatusMenuVisible -bool NO
 defaults write com.apple.Siri TypeToSiriEnabled -bool YES
 defaults write com.apple.Siri VoiceTriggerUserEnabled -bool YES
+
+# CotEditor
+defaults write com.coteditor.CotEditor fontName -string "SFMono-Regular"
+defaults write com.coteditor.CotEditor fontSize -float 13
 
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
