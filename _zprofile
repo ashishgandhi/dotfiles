@@ -3,14 +3,14 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
-export GOROOT=/usr/local/opt/go/libexec
+export GOROOT=/opt/homebrew/opt/go/libexec
 export GOPATH=~/Developer/go
 export GOBIN=~/Developer/go/bin
 
 path=(
   $GOBIN
-  /usr/local/opt/{go,python}/libexec/bin
-  /usr/local/{bin,sbin}
+  /opt/homebrew/opt/{go,python}/libexec/bin
+  /opt/homebrew/{bin,sbin}
   $path
 )
 
