@@ -74,7 +74,7 @@ defaults write com.apple.finder NewWindowTargetPath "file://$HOME/"
 killall Finder
 
 # Dock
-defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock tilesize -int 42
 defaults write com.apple.dock launchanim -bool NO
 defaults write com.apple.dock magnification -bool NO
 defaults write com.apple.dock show-recents -bool NO
