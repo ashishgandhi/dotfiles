@@ -132,7 +132,7 @@ defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstNa
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
-./install.py --go-completer --java-completer --clang-completer
+./install.py --go-completer
 
 # Reeder
 defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
