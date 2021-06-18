@@ -30,10 +30,10 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew analytics off
 
 # Install packages
-brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu netnewswire python ripgrep tig tldr vim youtube-dl
+brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 paw rectangle signal soulver sublime-text suspicious-package
+brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 netnewswire paw rectangle signal soulver sublime-text suspicious-package
 
 # Install Mac App Store apps
 # Amphetamine, CotEditor, DaisyDisk, Fantastical 2, Flow, Front and Center, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, WhatsApp, Wipr
