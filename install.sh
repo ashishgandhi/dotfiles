@@ -19,7 +19,7 @@ done
 
 # Install SF Mono
 loc='/tmp/SF-Mono.dmg'
-curl -o $loc https://developer.apple.com/design/downloads/SF-Mono.dmg
+curl -Lo $loc https://developer.apple.com/design/downloads/SF-Mono.dmg
 hdiutil attach $loc
 mnt='/Volumes/SFMonoFonts'
 sudo installer -verbose -pkg "${mnt}/SF Mono Fonts.pkg" -target /
