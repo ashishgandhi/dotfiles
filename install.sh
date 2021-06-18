@@ -30,18 +30,11 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu netnewswire python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 paw raycast rectangle signal soulver sublime-text suspicious-package textmate
-
-# No longer installing
-# brew cask uninstall alfred bartender google-chrome homebrew/cask-versions/sequel-pro-nightly sourcetree spotify
+brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 paw rectangle signal soulver sublime-text suspicious-package
 
 # Install Mac App Store apps
-# Amphetamine, CotEditor, DaisyDisk, Fantastical 2, Flow, Front and Center, Hex Fiend, JSON Editor, Kaleidoscope, Keka, Microsoft To Do, Monodraw, Paste, Reeder 5, Spark, Things 3, Tweetbot 3, WhatsApp, Wipr
-mas install 937984704 1024640650 411643860 975937182 1423210932 1493996622 1544743900 1342896380 567740330 587512244 470158793 1274495053 920404675 967805235 1529448980 1176895641 904280696 1384080005 1147396723 1320666476
-
-# No longer installing
-# Magnet, Pocket, PomTimer, Silicio, The Unarchiver, iStat Menus
-# mas uninstall 441258766 568494494 843107699 933627574 425424353 1319778037
+# Amphetamine, CotEditor, DaisyDisk, Fantastical 2, Flow, Front and Center, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, WhatsApp, Wipr
+mas install 937984704 1024640650 411643860 975937182 1423210932 1493996622 1544743900 1342896380 587512244 470158793 920404675 967805235 1529448980 904280696 1147396723 1320666476
 
 # Update path and other essential environment variables
 source ~/.zprofile
@@ -141,13 +134,6 @@ vim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py --go-completer --java-completer --clang-completer
 
-# TextMate
-defaults write com.macromates.TextMate fileBrowserPlacement -string "left"
-
-# Tweetbot
-defaults write com.tapbots.Tweetbot3Mac syncType -int 1
-defaults write com.tapbots.Tweetbot3Mac autoplayVideoTimeline -bool NO
-
 # Reeder
 defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
 defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
@@ -174,10 +160,6 @@ defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool NO
 defaults write uk.co.tla-systems.pcalc HorizontalLayoutID_V4 -string "uk.co.tla-systems.pcalc.layout.programminghorizontal"
 defaults write uk.co.tla-systems.pcalc ShowTape_V4 -bool YES
 
-# Numi
-defaults write com.dmitrynikolaev.numi nightTheme -bool NO
-defaults write com.dmitrynikolaev.numi menuBarMode -bool NO
-
 # AppCleaner
 defaults write net.freemacsoft.AppCleaner SUEnableAutomaticChecks -bool YES
 defaults write net.freemacsoft.AppCleaner SUAutomaticallyUpdate -bool YES
@@ -199,11 +181,6 @@ defaults write com.apple.podcasts MTSkipForwardIntervalDefault -int 30
 defaults write com.apple.podcasts MTContinuousPlaybackEnabled -bool YES
 defaults write com.apple.podcasts MTSyncSubscriptions -bool YES
 defaults write com.apple.podcasts MTPodcastDeletePlayedEpisodesDefaultKey -bool YES
-
-# Raycast
-defaults write com.raycast.macos raycastGlobalHotkey -string "Command-49"
-defaults write com.raycast.macos boostRankingByPreviousSearches -bool YES
-defaults write com.raycast.macos raycastUI_preferredTextSize -string "large"
 
 # Siri
 defaults write com.apple.Siri HotkeyTag -int 4
