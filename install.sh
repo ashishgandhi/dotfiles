@@ -122,6 +122,7 @@ defaults write com.apple.Safari AlwaysShowTabBar -bool YES
 defaults write com.apple.Safari PrintHeadersAndFooters -bool NO
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool YES
 defaults write com.apple.Safari CanPromptForPushNotifications -bool NO
+defaults write com.apple.Safari NeverUseBackgroundColorInToolbar -bool YES
 defaults write -g WebKitDeveloperExtras -bool YES
 
 # Contacts
