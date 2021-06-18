@@ -3,7 +3,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
-export GOROOT=/opt/homebrew/opt/go/libexec
+export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=~/Developer/server/go:~/Developer/go
 export GOBIN=~/Developer/go/bin
 
@@ -12,8 +12,8 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 path=(
   ${HOME}/Developer/server/devbox/client
   $GOBIN
-  /opt/homebrew/opt/{go,python}/libexec/bin
-  /opt/homebrew/{bin,sbin}
+  /usr/local/opt/{go,python}/libexec/bin
+  /usr/local/{bin,sbin}
   $path
 )
 
