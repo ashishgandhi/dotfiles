@@ -196,6 +196,9 @@ defaults write com.apple.Siri VoiceTriggerUserEnabled -bool YES
 defaults write com.coteditor.CotEditor fontName -string "SFMono-Regular"
 defaults write com.coteditor.CotEditor fontSize -float 13
 
+# Soulver
+defaults write app.soulver.appstore.mac SV_CUSTOM_FONT_NAME -string "SystemMonospaced"
+
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
