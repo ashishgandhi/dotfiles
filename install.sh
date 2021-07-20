@@ -53,6 +53,7 @@ defaults write -g NSQuitAlwaysKeepsWindows -bool YES
 defaults write -g NSCloseAlwaysConfirmsChanges -bool YES
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
+defaults write com.apple.universalaccess showWindowTitlebarIcons -bool YES
 
 # Menu Bar
 defaults write com.apple.systemuiserver menuExtras -array \
