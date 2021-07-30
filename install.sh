@@ -36,8 +36,8 @@ brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython j
 brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 netnewswire paw rectangle signal sublime-text suspicious-package
 
 # Install Mac App Store apps
-# CotEditor, DaisyDisk, Fantastical 2, Flow, Front and Center, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, WhatsApp, Wipr
-mas install 1024640650 411643860 975937182 1423210932 1493996622 1544743900 1342896380 587512244 470158793 920404675 967805235 1529448980 1508732804 904280696 1147396723 1320666476
+# CotEditor, DaisyDisk, Fantastical 2, Flow, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, WhatsApp, Wipr
+mas install 1024640650 411643860 975937182 1423210932 1544743900 1342896380 587512244 470158793 920404675 967805235 1529448980 1508732804 904280696 1147396723 1320666476
 
 # Update path and other essential environment variables
 source ~/.zprofile
@@ -150,12 +150,6 @@ defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool 
 defaults write com.ranchero.NetNewsWire-Evergreen articleTextSize -int 2
 defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
 defaults write com.ranchero.NetNewsWire-Evergreen timelineSortDirection -int -1
-
-# Front and Center
-defaults write co.hypercritical.Front-and-Center defaultBehavior -int 2
-defaults write co.hypercritical.Front-and-Center launchOnLogin -bool YES
-defaults write co.hypercritical.Front-and-Center showDockIcon -bool NO
-defaults write co.hypercritical.Front-and-Center showMenuBarIcon -bool YES
 
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
