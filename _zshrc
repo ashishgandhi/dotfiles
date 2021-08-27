@@ -43,3 +43,4 @@ alias tmux='tmux -CC'
 alias f='mdfind -onlyin .'
 alias h='fc -liD'
 alias yd="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
+alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Helpers/jsc"
