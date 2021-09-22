@@ -194,7 +194,8 @@ defaults write com.coteditor.CotEditor fontName -string "SFMono-Regular"
 defaults write com.coteditor.CotEditor fontSize -float 13
 
 # Soulver
-defaults write app.soulver.appstore.mac SV_CUSTOM_FONT_NAME -string "SystemMonospaced"
+defaults write app.soulver.appstore.mac SV_CUSTOM_FONT_NAME -string "SFMono-Regular"
+defaults write app.soulver.appstore.mac SV_FONT_SIZE -int 14
 
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
