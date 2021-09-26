@@ -33,11 +33,11 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask 1password appcleaner dash fork iina intellij-idea iterm2 netnewswire paw rectangle signal sublime-text suspicious-package
+brew install --cask appcleaner dash fork iina intellij-idea iterm2 netnewswire paw rectangle signal sublime-text suspicious-package
 
 # Install Mac App Store apps
-# CotEditor, DaisyDisk, Fantastical 2, Flow, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, WhatsApp, Wipr
-mas install 1024640650 411643860 975937182 1423210932 1544743900 1342896380 587512244 470158793 920404675 967805235 1529448980 1508732804 904280696 1147396723 1320666476
+# 1Password, CotEditor, DaisyDisk, Fantastical 2, Flow, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, WhatsApp, Wipr
+mas install 1333542190 1024640650 411643860 975937182 1423210932 1544743900 1342896380 587512244 470158793 920404675 967805235 1529448980 1508732804 904280696 1147396723 1320666476
 
 # Update path and other essential environment variables
 source ~/.zprofile
