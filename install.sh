@@ -17,13 +17,19 @@ do
     link_file $i
 done
 
-# Install SF Mono
-loc='/tmp/SF-Mono.dmg'
-curl -Lo $loc https://developer.apple.com/design/downloads/SF-Mono.dmg
-hdiutil attach $loc
-mnt='/Volumes/SFMonoFonts'
-sudo installer -verbose -pkg "${mnt}/SF Mono Fonts.pkg" -target /
-hdiutil detach $mnt
+# Install Apple fonts
+fonts=("SF-Pro" "SF-Mono" "NY")
+for font in "${fonts[@]}"
+do
+    loc="/tmp/${font}.dmg"
+    curl -Lo "${loc}" "https://devimages-cdn.apple.com/design/resources/download/${font}.dmg"
+    mnt="/Volumes/${font}"
+    hdiutil attach -mountpoint "${mnt}" "${loc}"
+    pkg="$(ls -1 ${mnt} | head -1)"
+    sudo installer -verbose -pkg "${mnt}/${pkg}" -target /
+    hdiutil detach "${mnt}"
+    rm "${loc}"
+done
 
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
