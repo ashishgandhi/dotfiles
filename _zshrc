@@ -31,7 +31,6 @@ alias ls='ls -G'
 alias grep='grep -E --color=auto'
 alias fgrep='grep -F'
 alias mgl="git log --oneline --author='Ashish Gandhi'"
-alias tmux='tmux -CC'
 alias f='mdfind -onlyin .'
 alias h='fc -liD'
 alias yd="youtube-dl -f 'best[ext=mp4]'"
