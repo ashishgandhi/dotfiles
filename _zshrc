@@ -39,7 +39,8 @@ alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/
 
 # Dropbox
 shell_host="di-shell-1"
-alias t="ssh -qCNfAD 8080 $shell_host && ssh -A $shell_host"
+alias t="ssh -qCNfAD 8080 $shell_host"
+alias p="ssh -A $shell_host"
 
 alias gestalt='mbzl tool //dropbox/yaps/gestalt'
 
