@@ -39,11 +39,11 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask appcleaner dash fork iina intellij-idea iterm2 netnewswire paw rectangle signal sublime-text suspicious-package
+brew install --cask appcleaner dash fork iina intellij-idea iterm2 paw rectangle signal sublime-text suspicious-package
 
 # Install Mac App Store apps
-# 1Blocker 1Password, CotEditor, DaisyDisk, Fantastical 2, Flow, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, WhatsApp, Wipr
-mas install 1365531024 1333542190 1024640650 411643860 975937182 1423210932 1544743900 1342896380 587512244 470158793 920404675 967805235 1529448980 1508732804 904280696 1147396723 1320666476
+# 1Blocker 1Password, CotEditor, DaisyDisk, Fantastical 2, Flow, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, Tweetbot 3, WhatsApp, Wipr
+mas install 1365531024 1333542190 1024640650 411643860 975937182 1423210932 1544743900 1342896380 587512244 470158793 920404675 967805235 1529448980 1508732804 904280696 1384080005 1147396723 1320666476
 
 # Update path and other essential environment variables
 source ~/.zprofile
@@ -150,12 +150,6 @@ cd ~/.vim/plugged/YouCompleteMe
 # Reeder
 defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
 defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
-
-# NetNewsWire
-defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool YES
-defaults write com.ranchero.NetNewsWire-Evergreen articleTextSize -int 2
-defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
-defaults write com.ranchero.NetNewsWire-Evergreen timelineSortDirection -int -1
 
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
