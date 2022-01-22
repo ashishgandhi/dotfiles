@@ -1,4 +1,6 @@
 # Customize
+# With "vi" in EDITOR or VISUAL, zle picks vi bindings
+bindkey -e
 PROMPT='❯ '
 ZLE_REMOVE_SUFFIX_CHARS=' \t\n;&)'
 setopt CORRECT

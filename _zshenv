@@ -16,6 +16,3 @@ path=(
 
 # Deduplicate
 typeset -gU cdpath fpath mailpath path
-
-# With "vi" in EDITOR or VISUAL, zle picks vi bindings
-bindkey -e
