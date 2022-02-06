@@ -6,13 +6,3 @@ export PAGER='less'
 export GOROOT=/opt/homebrew/opt/go/libexec
 export GOPATH=~/Developer/go
 export GOBIN=~/Developer/go/bin
-
-path=(
-  $GOBIN
-  /opt/homebrew/opt/{go,python}/libexec/bin
-  /opt/homebrew/{bin,sbin}
-  $path
-)
-
-# Deduplicate
-typeset -gU cdpath fpath mailpath path

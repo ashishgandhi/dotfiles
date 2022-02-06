@@ -1,0 +1,12 @@
+# On macOS /etc/zprofile calls path_helper which reorders PATH.
+# This means to preserve the order we can not use .zshenv.
+
+path=(
+  $GOBIN
+  /opt/homebrew/opt/{go,python}/libexec/bin
+  /opt/homebrew/{bin,sbin}
+  $path
+)
+
+# Deduplicate
+typeset -gU cdpath fpath mailpath path
