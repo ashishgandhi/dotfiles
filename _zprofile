@@ -1,5 +1,8 @@
-# On macOS /etc/zprofile calls path_helper which reorders PATH.
-# This means to preserve the order we can not use .zshenv.
+# Generally, you want to update the PATH only after other things
+# are done updating it anyway.
+#
+# Specifically, on macOS /etc/zprofile calls path_helper which reorders
+# PATH. This means to preserve the order we can not use .zshenv.
 
 path=(
   $GOBIN
