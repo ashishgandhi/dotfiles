@@ -151,6 +151,10 @@ cd ~/.vim/plugged/YouCompleteMe
 defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
 defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
 
+# Mimestream
+defaults write com.mimestream.Mimestream TrailingEdgeSwipeAction -string "trash"
+defaults write com.mimestream.Mimestream LeadingEdgeSwipeAction -string "archive"
+
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
 
