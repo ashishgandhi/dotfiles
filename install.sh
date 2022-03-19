@@ -94,20 +94,23 @@ killall Dock
 # Hot corners
 # Possible values:
 #
-#  0: no-op
+#  0: None
 #  2: Mission Control
-#  3: Show application windows
+#  3: Application Windows
 #  4: Desktop
-#  5: Start screen saver
-#  6: Disable screen saver
+#  5: Start Screen Saver
+#  6: Disable Screen Saver
 #  7: Dashboard
-# 10: Put display to sleep
+# 10: Put Display to Sleep
 # 11: Launchpad
 # 12: Notification Center
+# 13: ⌘ Lock Screen
+# 14: Quick Note
 #
 # Corner are tl, tr, bl, br
 defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
 defaults write com.apple.dock showAppExposeGestureEnabled -bool YES
 defaults write com.apple.dock mru-spaces -bool NO
 defaults write com.apple.dock expose-group-apps -bool YES
