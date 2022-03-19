@@ -42,8 +42,8 @@ brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython j
 brew install --cask appcleaner dash google-chrome iina iterm2 paw rectangle signal suspicious-package visual-studio-code
 
 # Install Mac App Store apps
-# 1Blocker 1Password, CotEditor, DaisyDisk, Fantastical 2, Flow, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, Tweetbot 3, WhatsApp, Wipr
-mas install 1365531024 1333542190 1024640650 411643860 975937182 1423210932 1544743900 1342896380 587512244 470158793 920404675 967805235 1529448980 1508732804 904280696 1384080005 1147396723 1320666476
+# Amphetamine  DaisyDisk  Kaleidoscope  Keka  Monodraw  Paste  TestFlight  Things 1Blocker 1Password for Safari Hex Fiend Hush Microsoft To Do Reeder Tweetbot WhatsApp Wipr
+mas install 937984704 411643860 587512244 470158793 920404675 967805235 899247664 904280696 1365531024 1569813296 1342896380 1544743900 1274495053 1529448980 1384080005 1147396723 1320666476
 
 # Update path and other essential environment variables
 source ~/.zprofile
