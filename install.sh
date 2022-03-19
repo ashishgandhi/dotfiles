@@ -39,7 +39,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask appcleaner dash fork google-chrome iina iterm2 paw rectangle signal sublime-text suspicious-package visual-studio-code
+brew install --cask appcleaner dash fork google-chrome iina iterm2 paw rectangle signal suspicious-package visual-studio-code
 
 # Install Mac App Store apps
 # 1Blocker 1Password, CotEditor, DaisyDisk, Fantastical 2, Flow, Hex Fiend, Kaleidoscope, Keka, Monodraw, Paste, Reeder 5, Things 3, Tweetbot 3, WhatsApp, Wipr
