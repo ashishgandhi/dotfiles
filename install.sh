@@ -151,8 +151,11 @@ cd ~/.vim/plugged/YouCompleteMe
 ./install.py --go-completer
 
 # Reeder
-defaults write com.reederapp.rkit2.mac HiddenTitlebar -bool NO
-defaults write com.reederapp.rkit2.mac theme3 -string "Standard"
+defaults write com.reederapp.5.macOS items.leading-swipe -int 10
+defaults write com.reederapp.5.macOS items.trailing-swipe -int 1
+defaults write com.reederapp.5.macOS app.icon-badge -int 0
+defaults write com.reederapp.5.macOS app.layout -int 4
+defaults write com.reederapp.5.macOS bionic.toolbar -bool NO
 
 # Mimestream
 defaults write com.mimestream.Mimestream TrailingEdgeSwipeAction -string "trash"
