@@ -171,6 +171,10 @@ defaults write com.knollsoft.Rectangle launchOnLogin -bool YES
 defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool YES
 defaults write com.knollsoft.Rectangle windowSnapping -int 2
 
+# Amphetamine
+defaults write com.if.Amphetamine "Start Session At Launch" -int 1
+defaults write com.if.Amphetamine "Icon Style" -int 9
+
 # Things
 defaults write com.culturedcode.ThingsMac CCDockCountType -int 3
 
