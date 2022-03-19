@@ -39,7 +39,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask appcleaner dash google-chrome google-drive iina iterm2 paw rectangle signal suspicious-package visual-studio-code
+brew install --cask appcleaner dash google-chrome google-drive iina iterm2 maestral paw rectangle signal suspicious-package visual-studio-code
 
 # Install Mac App Store apps
 # Amphetamine  DaisyDisk  Kaleidoscope  Keka  Monodraw  Paste  TestFlight  Things 1Blocker 1Password for Safari Hex Fiend Hush Microsoft To Do Reeder Tweetbot WhatsApp Wipr
