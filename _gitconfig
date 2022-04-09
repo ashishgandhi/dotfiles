@@ -28,3 +28,5 @@
 	mine = log --oneline --author='Ashish Gandhi'
 	fix = commit -a --amend --no-edit
 	upset = reset --hard @{upstream}
+[http]
+	cookiefile = ~/.gitcookies
