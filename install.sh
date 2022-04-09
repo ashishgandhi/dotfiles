@@ -70,7 +70,7 @@ defaults write com.apple.systemuiserver menuExtras -array \
 "/System/Library/CoreServices/Menu Extras/Displays.menu" \
 "/System/Library/CoreServices/Menu Extras/Volume.menu"
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-defaults write com.apple.menuextra.clock DateFormat -string "MMM d  h:mm"
+defaults write com.apple.menuextra.clock DateFormat -string "MMM d h:mm"
 killall SystemUIServer
 
 # Finder
