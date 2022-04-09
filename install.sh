@@ -164,15 +164,8 @@ defaults write com.mimestream.Mimestream LeadingEdgeSwipeAction -string "archive
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
 
-# IntelliJ
-defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool NO
-
 # Visual Studio Code
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool NO
-
-# PCalc
-defaults write uk.co.tla-systems.pcalc HorizontalLayoutID_V4 -string "uk.co.tla-systems.pcalc.layout.programminghorizontal"
-defaults write uk.co.tla-systems.pcalc ShowTape_V4 -bool YES
 
 # AppCleaner
 defaults write net.freemacsoft.AppCleaner SUEnableAutomaticChecks -bool YES
@@ -191,28 +184,11 @@ defaults write com.if.Amphetamine "Icon Style" -int 9
 # Things
 defaults write com.culturedcode.ThingsMac CCDockCountType -int 3
 
-# Podcasts
-defaults write com.apple.podcasts MTPodcastAutoDownloadStateDefaultKey -int 1
-defaults write com.apple.podcasts MTRemoteSkipInsteadOfNextTrackDefault -bool YES
-defaults write com.apple.podcasts MTSkipBackwardsIntervalDefault -int 15
-defaults write com.apple.podcasts MTSkipForwardIntervalDefault -int 30
-defaults write com.apple.podcasts MTContinuousPlaybackEnabled -bool YES
-defaults write com.apple.podcasts MTSyncSubscriptions -bool YES
-defaults write com.apple.podcasts MTPodcastDeletePlayedEpisodesDefaultKey -bool YES
-
 # Siri
 defaults write com.apple.Siri HotkeyTag -int 4
 defaults write com.apple.Siri StatusMenuVisible -bool NO
 defaults write com.apple.Siri TypeToSiriEnabled -bool YES
 defaults write com.apple.Siri VoiceTriggerUserEnabled -bool YES
-
-# CotEditor
-defaults write com.coteditor.CotEditor fontName -string "SFMono-Regular"
-defaults write com.coteditor.CotEditor fontSize -float 13
-
-# Soulver
-defaults write app.soulver.appstore.mac SV_CUSTOM_FONT_NAME -string "SFMono-Regular"
-defaults write app.soulver.appstore.mac SV_FONT_SIZE -int 14
 
 # iTerm2
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
@@ -240,4 +216,3 @@ tell application "Terminal"
     set default settings to settings set theme
 end tell
 EOD
-
