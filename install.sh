@@ -167,6 +167,9 @@ defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
 # IntelliJ
 defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool NO
 
+# Visual Studio Code
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool NO
+
 # PCalc
 defaults write uk.co.tla-systems.pcalc HorizontalLayoutID_V4 -string "uk.co.tla-systems.pcalc.layout.programminghorizontal"
 defaults write uk.co.tla-systems.pcalc ShowTape_V4 -bool YES
