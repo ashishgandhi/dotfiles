@@ -80,6 +80,7 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
 defaults write com.apple.finder NewWindowTarget "PfHm"
 defaults write com.apple.finder NewWindowTargetPath "file://$HOME/"
+defaults write com.apple.finder _FXSortFoldersFirst -bool YES
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
 killall Finder
 
