@@ -1,6 +1,0 @@
-audio.normalize_v2=false
-audio.play_bitrate_enumeration=4
-audio.sync_bitrate_enumeration=4
-ui.hide_hpto=true
-ui.show_friend_feed=false
-ui.show_unplayable_tracks=true
