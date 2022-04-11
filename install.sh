@@ -185,6 +185,11 @@ defaults write com.if.Amphetamine "Icon Style" -int 9
 # Things
 defaults write com.culturedcode.ThingsMac CCDockCountType -int 3
 
+# IINA
+defaults write com.colliderli.iina showRemainingTime -bool YES
+defaults write com.colliderli.iina SUEnableAutomaticChecks -bool YES
+defaults write com.colliderli.iina resumeLastPosition -bool YES
+
 # Siri
 defaults write com.apple.Siri HotkeyTag -int 4
 defaults write com.apple.Siri StatusMenuVisible -bool NO
