@@ -32,6 +32,11 @@ do
     rm "${loc}"
 done
 
+# Reload environment
+source ~/.zprofile
+source ~/.zshenv
+source ~/.zshrc
+
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
@@ -45,9 +50,6 @@ brew install --cask appcleaner dash google-chrome google-drive iina iterm2 maest
 # Install Mac App Store apps
 # 1Blocker, 1Password for Safari, Amphetamine, DaisyDisk, Hex Fiend, Hush, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, Tweetbot, WhatsApp, Wipr
 mas install 1365531024 1569813296 937984704 411643860 1342896380 1544743900 470158793 1274495053 920404675 967805235 1529448980 899247664 904280696 1384080005 1147396723 1320666476
-
-# Update path and other essential environment variables
-source ~/.zprofile
 
 # Preferences
 
