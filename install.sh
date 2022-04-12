@@ -6,6 +6,7 @@ function link_file {
     dst="${HOME}/${1/_/.}"
 
     if [ -e "${dst}" ] && [ ! -L "${dst}" ]; then
+        echo "Backing up $dst as it already exists"
         mv $dst $dst.bak
     fi
 
