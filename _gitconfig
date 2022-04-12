@@ -19,7 +19,7 @@
 	tool = Kaleidoscope
 	noprefix = true
 [push]
-	default = simple
+	default = current
 [fetch]
 	prune = true
 [pull]
