@@ -148,6 +148,10 @@ defaults write -g WebKitDeveloperExtras -bool YES
 # Under Privacy needs Contacts
 defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstName sortingLastName"
 
+# Calendar
+defaults write com.apple.iCal showDeclinedEvents -bool YES
+defaults write com.apple.iCal "Show Week Numbers" -bool YES
+
 # Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
