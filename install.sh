@@ -163,6 +163,7 @@ defaults write com.reederapp.5.macOS items.leading-swipe -int 10
 defaults write com.reederapp.5.macOS items.trailing-swipe -int 1
 defaults write com.reederapp.5.macOS app.icon-badge -int 0
 defaults write com.reederapp.5.macOS app.layout -int 4
+defaults write com.reederapp.5.macOS app.item-order -int 1
 defaults write com.reederapp.5.macOS bionic.toolbar -bool NO
 
 # Mimestream
