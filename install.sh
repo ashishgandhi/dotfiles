@@ -184,7 +184,7 @@ defaults write net.freemacsoft.AppCleaner SUAutomaticallyUpdate -bool YES
 defaults write com.knollsoft.Rectangle SUEnableAutomaticChecks -bool YES
 defaults write com.knollsoft.Rectangle launchOnLogin -bool YES
 defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool YES
-defaults write com.knollsoft.Rectangle windowSnapping -int 2
+defaults write com.knollsoft.Rectangle windowSnapping -int 1
 
 # Amphetamine
 defaults write com.if.Amphetamine "Start Session At Launch" -int 1
