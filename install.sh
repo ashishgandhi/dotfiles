@@ -142,6 +142,7 @@ defaults write com.apple.Safari CanPromptForPushNotifications -bool NO
 defaults write com.apple.Safari NeverUseBackgroundColorInToolbar -bool YES
 defaults write com.apple.Safari ShowStandaloneTabBar -bool NO
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool NO
+defaults write com.apple.Safari WebKitPreferences.privateClickMeasurementEnabled -bool NO
 defaults write -g WebKitDeveloperExtras -bool YES
 
 # Contacts
