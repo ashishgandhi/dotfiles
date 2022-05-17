@@ -4,33 +4,31 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
-
 [init]
 	defaultBranch = main
-
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
-[merge]
-	tool = Kaleidoscope
-[difftool]
-	prompt = false
-[mergetool]
-	prompt = false
-[diff]
-	tool = Kaleidoscope
-	noprefix = true
 [push]
 	default = current
 [fetch]
 	prune = true
 [pull]
 	rebase = true
+[diff]
+	tool = Kaleidoscope
+	noprefix = true
+[difftool]
+	prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = Kaleidoscope
+[mergetool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[http]
+	cookiefile = ~/.gitcookies
 [alias]
 	mine = log --oneline --author='Ashish Gandhi'
 	fix = commit -a --amend --no-edit
 	upset = reset --hard @{upstream}
-[http]
-	cookiefile = ~/.gitcookies
