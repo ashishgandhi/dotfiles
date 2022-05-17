@@ -4,6 +4,10 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
+
+[init]
+	defaultBranch = main
+
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
