@@ -50,7 +50,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq kaleidoscope mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask appcleaner dash google-chrome google-drive iina iterm2 maestral mimestream paw rectangle signal suspicious-package visual-studio-code
+brew install --cask appcleaner dash fork google-chrome google-drive iina iterm2 maestral mimestream paw rectangle signal suspicious-package visual-studio-code
 
 # Install Mac App Store apps
 # 1Blocker, 1Password for Safari, Amphetamine, DaisyDisk, Hex Fiend, Hush, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, Tweetbot, WhatsApp, Wipr
@@ -179,6 +179,13 @@ defaults write com.mimestream.Mimestream LeadingEdgeSwipeAction -string "archive
 
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
+
+# Fork
+defaults write com.DanPristupov.Fork applicationUpdateChannel -int 1
+defaults write com.DanPristupov.Fork terminalClient -int 1
+defaults write com.DanPristupov.Fork externalDiffTool -int 10
+defaults write com.DanPristupov.Fork mergeTool -int 10
+defaults write com.DanPristupov.Fork defaultSourceFolder -string "${HOME}/Developer"
 
 # Visual Studio Code
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool NO
