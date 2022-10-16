@@ -18,6 +18,11 @@ do
     link_file $i
 done
 
+# Have to copy since neither folder nor file symlinks work
+filters="${HOME}/Library/Filters"
+mkdir -p "${filters}"
+cp ~/.config/filters/* "${filters}"
+
 # Install Apple fonts
 fonts=("SF-Pro" "SF-Mono" "NY")
 for font in "${fonts[@]}"
