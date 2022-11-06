@@ -164,6 +164,9 @@ defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstNa
 # Under Privacy needs Contacts
 defaults write com.apple.mail NewMessagesSoundName -string "Blow"
 
+# Messages
+defaults write ~/Library/Containers/com.apple.tonelibraryd/Data/Library/Preferences/com.apple.ToneLibrary.plist sms-sound-identifier -string "texttone:Bamboo"
+
 # Calendar
 defaults write com.apple.iCal showDeclinedEvents -bool YES
 defaults write com.apple.iCal "Show Week Numbers" -bool YES
