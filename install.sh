@@ -160,6 +160,10 @@ defaults write -g WebKitDeveloperExtras -bool YES
 # Under Privacy needs Contacts
 defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstName sortingLastName"
 
+# Mail
+# Under Privacy needs Contacts
+defaults write com.apple.mail NewMessagesSoundName -string "Blow"
+
 # Calendar
 defaults write com.apple.iCal showDeclinedEvents -bool YES
 defaults write com.apple.iCal "Show Week Numbers" -bool YES
