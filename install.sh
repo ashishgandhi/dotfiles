@@ -173,6 +173,10 @@ defaults write ~/Library/Containers/com.apple.tonelibraryd/Data/Library/Preferen
 defaults write com.apple.iCal showDeclinedEvents -bool YES
 defaults write com.apple.iCal "Show Week Numbers" -bool YES
 
+# Calculator
+defaults write com.apple.calculator ViewDefaultsKey -string "Scientific"
+defaults write com.apple.calculator PaperTapeVisibleDefaultsKey -bool YES
+
 # Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
