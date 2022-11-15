@@ -133,6 +133,8 @@ killall Dock
 # Safari
 # Under Privacy needs Full Disk Access
 defaults write com.apple.Safari AutoFillPasswords -bool NO
+defaults write com.apple.Safari AutoFillCreditCardData -bool NO
+defaults write com.apple.Safari AutoFillMiscellaneousForms -bool NO
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool YES
 defaults write com.apple.Safari IncludeDevelopMenu -bool YES
 defaults write com.apple.Safari ShowIconsInTabs -bool YES
