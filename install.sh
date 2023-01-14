@@ -58,8 +58,8 @@ brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython j
 brew install --cask appcleaner dash fork google-chrome google-drive iina maestral mimestream paw rectangle signal suspicious-package visual-studio-code
 
 # Install Mac App Store apps
-# 1Blocker, 1Password for Safari, Amphetamine, DaisyDisk, Hex Fiend, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, Tweetbot, WhatsApp
-mas install 1365531024 1569813296 937984704 411643860 1342896380 470158793 1274495053 920404675 967805235 1529448980 899247664 904280696 1384080005 1147396723
+# 1Blocker, 1Password for Safari, Amphetamine, DaisyDisk, Hex Fiend, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, WhatsApp
+mas install 1365531024 1569813296 937984704 411643860 1342896380 470158793 1274495053 920404675 967805235 1529448980 899247664 904280696 1147396723
 
 # Preferences
 
