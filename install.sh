@@ -55,7 +55,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq kaleidoscope mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask appcleaner dash fantastical fork google-chrome google-drive iina maestral mimestream netnewswire paw rectangle signal suspicious-package visual-studio-code
+brew install --cask appcleaner dash fantastical fork google-chrome google-drive iina maestral mimestream netnewswire paw rectangle signal suspicious-package
 
 # Install Mac App Store apps
 # 1Blocker, 1Password for Safari, Amphetamine, DaisyDisk, Hex Fiend, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, WhatsApp
@@ -205,9 +205,6 @@ defaults write com.DanPristupov.Fork terminalClient -int 1
 defaults write com.DanPristupov.Fork externalDiffTool -int 10
 defaults write com.DanPristupov.Fork mergeTool -int 10
 defaults write com.DanPristupov.Fork defaultSourceFolder -string "${HOME}/Developer"
-
-# Visual Studio Code
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool NO
 
 # AppCleaner
 defaults write net.freemacsoft.AppCleaner SUEnableAutomaticChecks -bool YES
