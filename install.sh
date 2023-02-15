@@ -69,6 +69,7 @@ defaults write -g com.apple.trackpad.scaling -float 3
 defaults write -g InitialKeyRepeat -int 25
 defaults write -g KeyRepeat -int 2
 defaults write -g ApplePressAndHoldEnabled -bool NO
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool NO
 defaults write -g NSQuitAlwaysKeepsWindows -bool YES
 defaults write -g NSCloseAlwaysConfirmsChanges -bool YES
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
