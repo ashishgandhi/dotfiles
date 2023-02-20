@@ -200,6 +200,7 @@ defaults write com.mimestream.Mimestream LeadingEdgeSwipeAction -string "archive
 
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
+defaults write com.wiheads.paste always-paste-as-plain-text -bool YES
 
 # Fork
 defaults write com.DanPristupov.Fork applicationUpdateChannel -int 1
