@@ -77,16 +77,20 @@ defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
 defaults write com.apple.universalaccess showWindowTitlebarIcons -bool YES
 
 # Menu Bar
-defaults write com.apple.systemuiserver menuExtras -array \
-"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-"/System/Library/CoreServices/Menu Extras/Clock.menu" \
-"/System/Library/CoreServices/Menu Extras/Displays.menu" \
-"/System/Library/CoreServices/Menu Extras/Volume.menu"
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-defaults write com.apple.menuextra.clock DateFormat -string "MMM d h:mm"
-killall SystemUIServer
+# defaults -currentHost read com.apple.controlcenter BatteryShowPercentage -bool NO
+defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool YES
+#  2: System Settings set to "Show When Active"
+#  8: System Settings set to "Don't Show in Menu Bar"
+# 18: System Settings set to "Always Show in Menu Bar"
+# 24: Removed manually from menu bar by dragging
+defaults -currentHost write com.apple.controlcenter Sound -int 18
+defaults -currentHost write com.apple.controlcenter NowPlaying -int 2
+defaults -currentHost write com.apple.controlcenter FocusModes -int 8
+# 0: when space allows
+# 1: always
+# 2: never
+defaults write com.apple.menuextra.clock ShowDate -int 0
+defaults write com.apple.menuextra.clock ShowDayOfWeek -bool YES
 
 # Finder
 defaults write com.apple.finder ShowPathbar -bool YES
