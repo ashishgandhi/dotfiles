@@ -55,7 +55,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask appcleaner dash fantastical fork google-chrome google-drive iina kaleidoscope maestral netnewswire paw rectangle signal suspicious-package
+brew install --cask appcleaner dash fantastical fork google-chrome google-drive iina kaleidoscope maestral netnewswire rectangle signal suspicious-package
 
 # Install Mac App Store apps
 # 1Blocker, 1Password for Safari, Amphetamine, BBEdit, DaisyDisk, Hex Fiend, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, WhatsApp
