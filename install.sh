@@ -47,7 +47,7 @@ source ~/.zshrc
 brew analytics off
 
 # Install packages
-brew install clang-format cmake ctags-exuberant ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim yt-dlp zoxide
+brew install clang-format cmake ctags-exuberant ffmpeg fzf git go ipython jq k9s mas ncdu python ripgrep tig tldr vim yt-dlp zoxide
 
 # Install apps
 brew install --cask appcleaner dash fantastical fork google-cloud-sdk google-drive iina kaleidoscope maccy maestral rectangle signal suspicious-package
