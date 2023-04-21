@@ -32,3 +32,6 @@ alias f='mdfind -onlyin .'
 alias h='fc -liD'
 alias yd='yt-dlp --format-sort vcodec:h264,fps,res,acodec:m4a'
 alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Helpers/jsc"
+
+# Google
+source "${HOME}/.google.zsh"
