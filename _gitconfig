@@ -1,6 +1,6 @@
 [user]
 	name = Ashish Gandhi
-	email = ag@ashishgandhi.org
+	email = ashishgandhi@google.com
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
