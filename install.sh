@@ -23,11 +23,6 @@ filters="${HOME}/Library/Filters"
 mkdir -p "${filters}"
 cp ~/.config/filters/* "${filters}"
 
-# Google Drive keeps creating a redundant shortcut without
-loc="${HOME}/Google Drive"
-touch "${loc}"
-chflags hidden "${loc}"
-
 # Install Apple fonts
 fonts=("SF-Pro" "SF-Mono" "NY")
 for font in "${fonts[@]}"
