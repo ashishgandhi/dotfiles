@@ -224,7 +224,7 @@ defaults write com.if.Amphetamine "Start Session At Launch" -int 1
 defaults write com.if.Amphetamine "Icon Style" -int 9
 
 # Things
-defaults write com.culturedcode.ThingsMac CCDockCountType -int 3
+defaults write com.culturedcode.ThingsMac CCDockCountType -int 1
 
 # IINA
 defaults write com.colliderli.iina showRemainingTime -bool YES
