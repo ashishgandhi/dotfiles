@@ -235,6 +235,7 @@ defaults write com.colliderli.iina resumeLastPosition -bool YES
 defaults write com.ranchero.NetNewsWire-Evergreen timelineSortDirection -int -1
 defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 3
 defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool YES
+defaults write com.ranchero.NetNewsWire-Evergreen timelineGroupByFeed -bool YES
 
 # Siri
 defaults write com.apple.Siri HotkeyTag -int 4
