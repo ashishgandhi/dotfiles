@@ -50,7 +50,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant fasd ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim youtube-dl
 
 # Install apps
-brew install --cask appcleaner dash fantastical fork google-chrome google-drive iina kaleidoscope maestral netnewswire rectangle signal suspicious-package
+brew install --cask appcleaner dash fantastical fork google-chrome google-drive iina kaleidoscope maccy maestral netnewswire rectangle signal suspicious-package
 
 # Install Mac App Store apps
 # 1Blocker, 1Password for Safari, Amphetamine, BBEdit, DaisyDisk, Hex Fiend, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, WhatsApp
@@ -222,6 +222,16 @@ defaults write com.knollsoft.Rectangle windowSnapping -int 1
 # Amphetamine
 defaults write com.if.Amphetamine "Start Session At Launch" -int 1
 defaults write com.if.Amphetamine "Icon Style" -int 9
+
+# Maccy
+defaults write org.p0deje.Maccy KeyboardShortcuts_popup -string '{"carbonModifiers":768,"carbonKeyCode":9}'
+defaults write org.p0deje.Maccy SUEnableAutomaticChecks -bool YES
+defaults write org.p0deje.Maccy hideTitle -bool YES
+defaults write org.p0deje.Maccy imageMaxHeight -int 16
+defaults write org.p0deje.Maccy pasteByDefault -bool YES
+defaults write org.p0deje.Maccy popupPosition -string "center"
+defaults write org.p0deje.Maccy previewDelay -int 200
+defaults write org.p0deje.Maccy removeFormattingByDefault -bool YES
 
 # Things
 defaults write com.culturedcode.ThingsMac CCDockCountType -int 1
