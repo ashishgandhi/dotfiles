@@ -191,8 +191,20 @@ defaults write com.reederapp.5.macOS items.trailing-swipe -int 1
 defaults write com.reederapp.5.macOS app.icon-badge -int 0
 defaults write com.reederapp.5.macOS app.layout -int 4
 defaults write com.reederapp.5.macOS app.item-order -int 1
+defaults write com.reederapp.5.macOS app.item-group-by-feed -bool YES
 defaults write com.reederapp.5.macOS bionic.toolbar -bool NO
 defaults write com.reederapp.5.macOS browser.open-links-in-default-browser -bool YES
+defaults write com.reederapp.5.macOS toolbar.com.reederapp.internal.ReadLater -bool YES
+defaults write com.reederapp.5.macOS app.toolbar-sharing-services -array "com.apple.share.AirDrop.send" "com.reederapp.internal.ReadLater" "com.reederapp.internal.CopyLink"
+defaults write com.reederapp.5.macOS Cloud/default -dict syncing.interval "<integer>15</integer>" syncing.on-wake "<true/>"
+defaults write com.reederapp.5.macOS ReadLater/default -dict syncing.interval "<integer>15</integer>" syncing.on-wake "<true/>"
+defaults write com.reederapp.5.macOS shortcuts -dict-add item.toggle-read \
+ "<dict>
+    <key>keyEquivalent</key>
+    <string>U</string>
+    <key>modifierFlags</key>
+    <integer>131072</integer>
+  </dict>"
 
 # Mimestream
 defaults write com.mimestream.Mimestream TrailingEdgeSwipeAction -string "trash"
