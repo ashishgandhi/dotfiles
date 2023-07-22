@@ -179,6 +179,12 @@ defaults write com.apple.iCal "Show heat map in Year View" -bool YES
 defaults write com.apple.calculator ViewDefaultsKey -string "Scientific"
 defaults write com.apple.calculator PaperTapeVisibleDefaultsKey -bool YES
 
+# Reminder
+defaults write com.apple.remindd todayNotificationFireTime -int 1000
+defaults write com.apple.remindd showRemindersAsOverdue -bool YES
+defaults write com.apple.remindd shouldIncludeRemindersDueTodayInBadgeCount -bool YES
+defaults write com.apple.remindd enableAssignmentNotifications -bool YES
+
 # Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
