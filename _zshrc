@@ -16,10 +16,7 @@ SAVEHIST=10000
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit
-for dump in ~/.zcompdump(N.mh+24); do
-  compinit -u
-done
-compinit -C
+compinit
 
 # Tools
 source "$(brew --prefix fzf)/shell/key-bindings.zsh"
