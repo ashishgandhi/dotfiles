@@ -12,12 +12,6 @@ HISTFILE="${HOME}/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
 
-# Tools
-source "$(brew --prefix fzf)/shell/key-bindings.zsh"
-source "$(brew --prefix fzf)/shell/completion.zsh"
-source "${HOME}/.config/iterm2/shell_integration.zsh"
-eval "$(fasd --init auto)"
-
 # Completion
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
@@ -27,8 +21,13 @@ for dump in ~/.zcompdump(N.mh+24); do
 done
 compinit -C
 
+# Tools
+source "$(brew --prefix fzf)/shell/key-bindings.zsh"
+source "$(brew --prefix fzf)/shell/completion.zsh"
+source "${HOME}/.config/iterm2/shell_integration.zsh"
+eval "$(zoxide init --cmd j zsh)"
+
 # Aliases
-alias j='fasd_cd -i'
 alias ls='ls -G'
 alias grep='grep -E --color=auto'
 alias fgrep='grep -F'
