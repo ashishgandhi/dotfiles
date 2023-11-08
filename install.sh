@@ -237,6 +237,8 @@ defaults write com.knollsoft.Rectangle SUEnableAutomaticChecks -bool YES
 defaults write com.knollsoft.Rectangle launchOnLogin -bool YES
 defaults write com.knollsoft.Rectangle alternateDefaultShortcuts -bool YES
 defaults write com.knollsoft.Rectangle windowSnapping -int 1
+defaults write com.knollsoft.Rectangle todo -int 1
+defaults write com.knollsoft.Rectangle footprintAnimationDurationMultiplier -float 0.75
 
 # Amphetamine
 defaults write com.if.Amphetamine "Start Session At Launch" -int 1
