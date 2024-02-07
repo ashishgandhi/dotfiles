@@ -50,7 +50,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim yt-dlp zoxide
 
 # Install apps
-brew install --cask appcleaner dash fantastical fork google-drive iina kaleidoscope maccy maestral netnewswire rectangle signal suspicious-package
+brew install --cask appcleaner dash fantastical fork google-drive iina kaleidoscope maccy maestral rectangle signal suspicious-package
 
 # Install Mac App Store apps
 # 1Blocker, 1Password for Safari, Amphetamine, BBEdit, DaisyDisk, Hex Fiend, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, WhatsApp
@@ -261,12 +261,6 @@ defaults write com.culturedcode.ThingsMac CCDockCountType -int 1
 defaults write com.colliderli.iina showRemainingTime -bool YES
 defaults write com.colliderli.iina SUEnableAutomaticChecks -bool YES
 defaults write com.colliderli.iina resumeLastPosition -bool YES
-
-# NetNewsWire
-defaults write com.ranchero.NetNewsWire-Evergreen timelineSortDirection -int 1
-defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
-defaults write com.ranchero.NetNewsWire-Evergreen timelineGroupByFeed -bool NO
-defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool YES
 
 # Siri
 defaults write com.apple.Siri HotkeyTag -int 4
