@@ -193,7 +193,7 @@ cd ~/.vim/plugged/YouCompleteMe
 ./install.py --go-completer
 
 # Reeder
-defaults write com.reederapp.5.macOS items.leading-swipe -int 10
+defaults write com.reederapp.5.macOS items.leading-swipe -int 19
 defaults write com.reederapp.5.macOS items.trailing-swipe -int 1
 defaults write com.reederapp.5.macOS corekit.animator.configuration -int 2
 defaults write com.reederapp.5.macOS app.icon-badge -int 0
@@ -201,7 +201,7 @@ defaults write com.reederapp.5.macOS app.layout -int 4
 defaults write com.reederapp.5.macOS app.item-order -int -1
 defaults write com.reederapp.5.macOS app.item-group-by-feed -bool YES
 defaults write com.reederapp.5.macOS bionic.toolbar -bool NO
-defaults write com.reederapp.5.macOS browser.open-links-in-default-browser -bool YES
+defaults write com.reederapp.5.macOS browser.open-links-in-default-browser -bool NO
 defaults write com.reederapp.5.macOS toolbar.com.reederapp.internal.ReadLater -bool YES
 defaults write com.reederapp.5.macOS app.toolbar-sharing-services -array "com.apple.share.AirDrop.send" "com.reederapp.internal.ReadLater" "com.reederapp.internal.CopyLink"
 defaults write com.reederapp.5.macOS Cloud/default -dict syncing.interval "<integer>15</integer>" syncing.on-wake "<true/>"
