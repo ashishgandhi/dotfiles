@@ -217,6 +217,7 @@ defaults write com.reederapp.5.macOS shortcuts -dict-add item.toggle-read \
 # Mimestream
 defaults write com.mimestream.Mimestream TrailingEdgeSwipeAction -string "trash"
 defaults write com.mimestream.Mimestream LeadingEdgeSwipeAction -string "archive"
+defaults write com.mimestream.Mimestream ListStyle -string "expanded"
 
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
