@@ -86,7 +86,8 @@ defaults -currentHost write com.apple.controlcenter FocusModes -int 8
 # 2: never
 defaults write com.apple.menuextra.clock ShowDate -int 0
 defaults write com.apple.menuextra.clock ShowDayOfWeek -bool YES
-defaults write -g AppleMenuBarVisibleInFullscreen -bool YES
+# This means the Menu Bar shows in full screen videos as well
+# defaults write -g AppleMenuBarVisibleInFullscreen -bool YES
 
 # Finder
 defaults write com.apple.finder ShowPathbar -bool YES
