@@ -127,9 +127,10 @@ killall Dock
 # 14: Quick Note
 #
 # Corner are tl, tr, bl, br
-defaults write com.apple.dock wvous-bl-corner -int 5
-defaults write com.apple.dock wvous-bl-modifier -int 0
-defaults write com.apple.dock wvous-br-corner -int 0
+defaults write com.apple.dock wvous-tl-modifier -int 0
+defaults write com.apple.dock wvous-tl-corner -int 2
+defaults write com.apple.dock wvous-bl-corner -int 3
+defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock showAppExposeGestureEnabled -bool YES
 defaults write com.apple.dock mru-spaces -bool NO
 defaults write com.apple.dock expose-group-apps -bool YES
