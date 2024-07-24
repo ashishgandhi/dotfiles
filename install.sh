@@ -91,6 +91,13 @@ defaults write com.apple.menuextra.clock ShowDayOfWeek -bool YES
 # This means the Menu Bar shows in full screen videos as well
 # defaults write -g AppleMenuBarVisibleInFullscreen -bool YES
 
+# Window management
+defaults write com.apple.WindowManager EnableTiledWindowMargins -bool NO
+defaults write -g NSUserKeyEquivalents -dict-add $'\eWindow\eMove & Resize\eLeft' ~^←
+defaults write -g NSUserKeyEquivalents -dict-add $'\eWindow\eMove & Resize\eRight' ~^\→
+defaults write -g NSUserKeyEquivalents -dict-add $'\eWindow\eMove & Resize\eReturn to Previous Size' ~^↓
+defaults write -g NSUserKeyEquivalents -dict-add $'\eWindow\eZoom' ~^↑
+
 # Finder
 defaults write com.apple.finder ShowPathbar -bool YES
 defaults write com.apple.finder ShowStatusBar -bool YES
