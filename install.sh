@@ -69,6 +69,7 @@ defaults write -g ApplePressAndHoldEnabled -bool NO
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool NO
 defaults write -g NSQuitAlwaysKeepsWindows -bool YES
 defaults write -g NSCloseAlwaysConfirmsChanges -bool YES
+defaults write -g NSUserKeyEquivalents -dict-add Strikethrough '@$x'
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
 defaults write com.apple.universalaccess showWindowTitlebarIcons -bool YES
