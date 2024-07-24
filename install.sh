@@ -24,7 +24,7 @@ mkdir -p "${filters}"
 cp ~/.config/filters/* "${filters}"
 
 # Install Apple fonts
-fonts=("SF-Pro" "SF-Mono" "NY")
+fonts=('SF-Pro' 'SF-Mono' 'NY')
 for font in "${fonts[@]}"
 do
     loc="/tmp/${font}.dmg"
@@ -94,12 +94,12 @@ defaults write com.apple.menuextra.clock ShowDayOfWeek -bool YES
 # Finder
 defaults write com.apple.finder ShowPathbar -bool YES
 defaults write com.apple.finder ShowStatusBar -bool YES
-defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
-defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
-defaults write com.apple.finder NewWindowTarget "PfHm"
-defaults write com.apple.finder NewWindowTargetPath "file://$HOME/"
+defaults write com.apple.finder FXDefaultSearchScope -string SCcf
+defaults write com.apple.finder FXPreferredViewStyle -string icnv
+defaults write com.apple.finder NewWindowTarget -string PfHm
+defaults write com.apple.finder NewWindowTargetPath -string "file://$HOME/"
 defaults write com.apple.finder _FXSortFoldersFirst -bool YES
-/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c 'Set :StandardViewSettings:IconViewSettings:arrangeBy name' ~/Library/Preferences/com.apple.finder.plist
 killall Finder
 
 # Dock
@@ -167,22 +167,22 @@ defaults write -g WebKitDeveloperExtras -bool YES
 
 # Contacts
 # Under Privacy needs Contacts
-defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstName sortingLastName"
+defaults write com.apple.AddressBook ABNameSortingFormat -string 'sortingFirstName sortingLastName'
 
 # Mail
 # Under Privacy needs Contacts
-defaults write com.apple.mail NewMessagesSoundName -string "Blow"
+defaults write com.apple.mail NewMessagesSoundName -string Blow
 
 # Messages
-defaults write ~/Library/Containers/com.apple.tonelibraryd/Data/Library/Preferences/com.apple.ToneLibrary.plist sms-sound-identifier -string "texttone:Bamboo"
+defaults write ~/Library/Containers/com.apple.tonelibraryd/Data/Library/Preferences/com.apple.ToneLibrary.plist sms-sound-identifier -string texttone:Bamboo
 
 # Calendar
 defaults write com.apple.iCal showDeclinedEvents -bool YES
-defaults write com.apple.iCal "Show Week Numbers" -bool YES
-defaults write com.apple.iCal "Show heat map in Year View" -bool YES
+defaults write com.apple.iCal 'Show Week Numbers' -bool YES
+defaults write com.apple.iCal 'Show heat map in Year View' -bool YES
 
 # Calculator
-defaults write com.apple.calculator ViewDefaultsKey -string "Scientific"
+defaults write com.apple.calculator ViewDefaultsKey -string Scientific
 defaults write com.apple.calculator PaperTapeVisibleDefaultsKey -bool YES
 
 # Reminder
@@ -210,21 +210,21 @@ defaults write com.reederapp.5.macOS article.pull-to-next-prev -bool NO
 defaults write com.reederapp.5.macOS bionic.toolbar -bool NO
 defaults write com.reederapp.5.macOS browser.open-links-in-default-browser -bool NO
 defaults write com.reederapp.5.macOS toolbar.com.reederapp.internal.ReadLater -bool YES
-defaults write com.reederapp.5.macOS app.toolbar-sharing-services -array "com.apple.share.AirDrop.send" "com.reederapp.internal.ReadLater" "com.reederapp.internal.CopyLink"
-defaults write com.reederapp.5.macOS Cloud/default -dict syncing.interval "<integer>15</integer>" syncing.on-wake "<true/>"
-defaults write com.reederapp.5.macOS ReadLater/default -dict syncing.interval "<integer>15</integer>" syncing.on-wake "<true/>"
+defaults write com.reederapp.5.macOS app.toolbar-sharing-services -array com.apple.share.AirDrop.send com.reederapp.internal.ReadLater com.reederapp.internal.CopyLink
+defaults write com.reederapp.5.macOS Cloud/default -dict syncing.interval '<integer>15</integer>' syncing.on-wake '<true/>'
+defaults write com.reederapp.5.macOS ReadLater/default -dict syncing.interval '<integer>15</integer>' syncing.on-wake '<true/>'
 defaults write com.reederapp.5.macOS shortcuts -dict-add item.toggle-read \
- "<dict>
+ '<dict>
     <key>keyEquivalent</key>
     <string>U</string>
     <key>modifierFlags</key>
     <integer>131072</integer>
-  </dict>"
+  </dict>'
 
 # Mimestream
-defaults write com.mimestream.Mimestream TrailingEdgeSwipeAction -string "trash"
-defaults write com.mimestream.Mimestream LeadingEdgeSwipeAction -string "archive"
-defaults write com.mimestream.Mimestream ListStyle -string "expanded"
+defaults write com.mimestream.Mimestream TrailingEdgeSwipeAction -string trash
+defaults write com.mimestream.Mimestream LeadingEdgeSwipeAction -string archive
+defaults write com.mimestream.Mimestream ListStyle -string expanded
 
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
@@ -250,8 +250,8 @@ defaults write com.knollsoft.Rectangle todo -int 1
 defaults write com.knollsoft.Rectangle footprintAnimationDurationMultiplier -float 0.75
 
 # Amphetamine
-defaults write com.if.Amphetamine "Start Session At Launch" -int 1
-defaults write com.if.Amphetamine "Icon Style" -int 9
+defaults write com.if.Amphetamine 'Start Session At Launch' -int 1
+defaults write com.if.Amphetamine 'Icon Style' -int 9
 
 # Maccy
 defaults write org.p0deje.Maccy KeyboardShortcuts_popup -string '{"carbonModifiers":768,"carbonKeyCode":9}'
@@ -259,7 +259,7 @@ defaults write org.p0deje.Maccy SUEnableAutomaticChecks -bool YES
 defaults write org.p0deje.Maccy hideTitle -bool YES
 defaults write org.p0deje.Maccy imageMaxHeight -int 16
 defaults write org.p0deje.Maccy pasteByDefault -bool YES
-defaults write org.p0deje.Maccy popupPosition -string "center"
+defaults write org.p0deje.Maccy popupPosition -string center
 defaults write org.p0deje.Maccy previewDelay -int 200
 defaults write org.p0deje.Maccy removeFormattingByDefault -bool YES
 
@@ -278,7 +278,7 @@ defaults write com.apple.Siri TypeToSiriEnabled -bool YES
 defaults write com.apple.Siri VoiceTriggerUserEnabled -bool YES
 
 # iTerm2
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2"
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string '~/.config/iterm2'
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool YES
 defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile_selection -int 1
 defaults write com.googlecode.iterm2 NoSyncTipsDisabled -bool YES
