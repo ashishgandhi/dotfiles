@@ -171,6 +171,7 @@ defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool NO
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool NO
 defaults write com.apple.Safari WebKitPreferences.privateClickMeasurementEnabled -bool NO
 defaults write com.apple.Safari EnableEnhancedPrivacyInRegularBrowsing -bool YES
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool YES
 defaults write -g WebKitDeveloperExtras -bool YES
 
 # Contacts
