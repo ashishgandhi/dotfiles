@@ -240,6 +240,7 @@ defaults write com.mimestream.Mimestream ListStyle -string expanded
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
 defaults write com.wiheads.paste always-paste-as-plain-text -bool YES
+defaults write com.wiheads.paste kPSTPreferencesBlackAppsBundles -array com.apple.keychainaccess com.apple.Passwords com.1password.1password
 
 # Fork
 defaults write com.DanPristupov.Fork applicationUpdateChannel -int 1
