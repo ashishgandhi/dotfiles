@@ -32,3 +32,4 @@
 	mine = log --oneline --author='Ashish Gandhi'
 	fix = commit -a --amend --no-edit
 	upset = reset --hard @{upstream}
+	sub-update = submodule update --init --recursive --checkout
