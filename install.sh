@@ -190,6 +190,7 @@ defaults write ~/Library/Containers/com.apple.tonelibraryd/Data/Library/Preferen
 defaults write com.apple.iCal showDeclinedEvents -bool YES
 defaults write com.apple.iCal 'Show Week Numbers' -bool YES
 defaults write com.apple.iCal 'Show heat map in Year View' -bool YES
+defaults write com.apple.iCal 'Default duration in minutes for new event' -float 30
 
 # Calculator
 defaults write com.apple.calculator ViewDefaultsKey -string Scientific
