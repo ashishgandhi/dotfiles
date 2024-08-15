@@ -53,8 +53,8 @@ brew install clang-format cmake ctags-exuberant ffmpeg fzf git go ipython jq mas
 brew install --cask appcleaner dash fantastical fork google-drive iina kaleidoscope maccy maestral signal suspicious-package
 
 # Install Mac App Store apps
-# 1Blocker, 1Password for Safari, BBEdit, DaisyDisk, Hex Fiend, Ivory, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, WhatsApp
-mas install 1365531024 1569813296 404009241 411643860 1342896380 6444602274 470158793 1274495053 920404675 967805235 1529448980 899247664 904280696 1147396723
+# 1Blocker, 1Password for Safari, BBEdit, Crouton, DaisyDisk, Hex Fiend, Ivory, Keka, Microsoft To Do, Monodraw, Paste, Reeder, TestFlight, Things, WhatsApp
+mas install 1365531024 1569813296 404009241 1461650987 411643860 1342896380 6444602274 470158793 1274495053 920404675 967805235 1529448980 899247664 904280696 1147396723
 
 # Preferences
 
@@ -246,6 +246,11 @@ defaults write com.DanPristupov.Fork terminalClient -int 1
 defaults write com.DanPristupov.Fork externalDiffTool -int 10
 defaults write com.DanPristupov.Fork mergeTool -int 10
 defaults write com.DanPristupov.Fork defaultSourceFolder -string "${HOME}/Developer"
+
+# Crouton
+defaults write com.meal.plan.ios username -string Ashish
+defaults write com.meal.plan.ios shouldDetectWebsites -bool NO
+defaults write com.meal.plan.ios showDiscover -bool NO
 
 # AppCleaner
 defaults write net.freemacsoft.AppCleaner SUEnableAutomaticChecks -bool YES
