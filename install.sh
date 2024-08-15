@@ -61,7 +61,7 @@ mas install 1365531024 1569813296 404009241 411643860 1342896380 6444602274 4701
 # Global
 defaults write -g AppleKeyboardUIMode -int 3
 defaults write -g com.apple.trackpad.scaling -float 3
-defaults write -g com.apple.mouse.scaling -float 2
+defaults write -g com.apple.mouse.scaling -float 2.5
 defaults write -g com.apple.scrollwheel.scaling -float 1
 defaults write -g AppleShowScrollBars -string WhenScrolling
 defaults write -g InitialKeyRepeat -int 25
