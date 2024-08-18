@@ -285,6 +285,12 @@ defaults write org.p0deje.Maccy removeFormattingByDefault -bool YES
 # Things
 defaults write com.culturedcode.ThingsMac CCDockCountType -int 1
 
+# BBEdit
+defaults write com.barebones.bbedit EditorSoftWrap -bool YES
+defaults write com.barebones.bbedit SoftWrapStyle -int 2
+defaults write com.barebones.bbedit EditingWindowShowPageGuide -bool NO
+defaults write com.barebones.bbedit Search_WrapAround -bool YES
+
 # IINA
 defaults write com.colliderli.iina showRemainingTime -bool YES
 defaults write com.colliderli.iina SUEnableAutomaticChecks -bool YES
