@@ -290,6 +290,7 @@ defaults write com.barebones.bbedit EditorSoftWrap -bool YES
 defaults write com.barebones.bbedit SoftWrapStyle -int 2
 defaults write com.barebones.bbedit EditingWindowShowPageGuide -bool NO
 defaults write com.barebones.bbedit Search_WrapAround -bool YES
+defaults write com.barebones.bbedit BBEditorFont -data "$(cat ~/.config/bbedit/font.hex.txt)"
 
 # IINA
 defaults write com.colliderli.iina showRemainingTime -bool YES
