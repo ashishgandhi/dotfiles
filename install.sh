@@ -7,15 +7,15 @@ function link_file {
 
     if [ -e "${dst}" ] && [ ! -L "${dst}" ]; then
         echo "Backing up $dst as it already exists"
-        mv $dst $dst.bak
+        mv "$dst" "$dst.bak"
     fi
 
-    ln -sfh ${src} ${dst}
+    ln -sfh "${src}" "${dst}"
 }
 
 for i in _*
 do
-    link_file $i
+    link_file "$i"
 done
 
 # Have to copy since neither folder nor file symlinks work
