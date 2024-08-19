@@ -31,8 +31,8 @@ do
     curl -Lo "${loc}" "https://devimages-cdn.apple.com/design/resources/download/${font}.dmg"
     mnt="/Volumes/${font}"
     hdiutil attach -mountpoint "${mnt}" "${loc}"
-    pkg="$(ls -1 ${mnt} | head -1)"
-    sudo installer -verbose -pkg "${mnt}/${pkg}" -target /
+    pkg=$(find "$mnt" -iname '*.pkg' -print -quit)
+    sudo installer -verbose -pkg "${pkg}" -target /
     hdiutil detach "${mnt}"
     rm "${loc}"
 done
