@@ -1,23 +1,5 @@
 #!/bin/zsh -e
 
-# Setup zsh
-function link_file {
-    src="${PWD}/$1"
-    dst="${HOME}/${1/_/.}"
-
-    if [ -e "${dst}" ] && [ ! -L "${dst}" ]; then
-        echo "Backing up $dst as it already exists"
-        mv "$dst" "$dst.bak"
-    fi
-
-    ln -sfh "${src}" "${dst}"
-}
-
-for i in _*
-do
-    link_file "$i"
-done
-
 # Have to copy since neither folder nor file symlinks work
 filters="${HOME}/Library/Filters"
 mkdir -p "${filters}"
@@ -36,11 +18,6 @@ do
     hdiutil detach "${mnt}"
     rm "${loc}"
 done
-
-# Reload environment
-source ~/.zprofile
-source ~/.zshenv
-source ~/.zshrc
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
