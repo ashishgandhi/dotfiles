@@ -27,7 +27,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim yt-dlp zoxide
 
 # Install apps
-brew install --cask appcleaner dash fantastical fork google-drive iina kaleidoscope maccy maestral signal suspicious-package
+brew install --cask appcleaner dash fork google-drive iina kaleidoscope maestral signal suspicious-package
 
 # Install Mac App Store apps
 # 1Blocker, 1Password for Safari, BBEdit, Crouton, DaisyDisk, Hex Fiend, Ivory, Keka, Microsoft To Do, Monodraw, Paste, Sink It, Reeder, TestFlight, Things, Vinegar, WhatsApp
@@ -248,16 +248,6 @@ defaults write com.knollsoft.Rectangle footprintAnimationDurationMultiplier -flo
 
 # Ivory
 defaults write com.tapbots.Ivory mediaPlaybackType -int 1
-
-# Maccy
-defaults write org.p0deje.Maccy KeyboardShortcuts_popup -string '{"carbonModifiers":768,"carbonKeyCode":9}'
-defaults write org.p0deje.Maccy SUEnableAutomaticChecks -bool YES
-defaults write org.p0deje.Maccy hideTitle -bool YES
-defaults write org.p0deje.Maccy imageMaxHeight -int 16
-defaults write org.p0deje.Maccy pasteByDefault -bool YES
-defaults write org.p0deje.Maccy popupPosition -string center
-defaults write org.p0deje.Maccy previewDelay -int 200
-defaults write org.p0deje.Maccy removeFormattingByDefault -bool YES
 
 # Things
 defaults write com.culturedcode.ThingsMac CCDockCountType -int 1
