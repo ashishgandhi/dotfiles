@@ -178,6 +178,19 @@ defaults write com.apple.remindd showRemindersAsOverdue -bool YES
 defaults write com.apple.remindd shouldIncludeRemindersDueTodayInBadgeCount -bool YES
 defaults write com.apple.remindd enableAssignmentNotifications -bool YES
 
+# Image Capture
+# Show the details panel
+defaults write com.apple.Image_Capture IK_scannerDisplayMode -int 1
+defaults write com.apple.Image_Capture IK_ScanResolution -int 300
+defaults write com.apple.Image_Capture IK_CreateSingleDocument -bool YES
+# Fall back to default of US letter
+defaults write com.apple.Image_Capture IK_UseCustomScanSize -int 0
+# Save scans as PDFs
+defaults write com.apple.Image_Capture IK_FileFormatTagColor -int 7
+# Set scan location from predefined list to ~/Downloads
+# IK_Scanner_selectedTag overrides IK_Scanner_downloadURL
+defaults write com.apple.Image_Capture IK_Scanner_selectedTag -int 1004
+
 # Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
