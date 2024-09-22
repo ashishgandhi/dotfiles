@@ -150,6 +150,9 @@ defaults write com.apple.Safari EnableEnhancedPrivacyInRegularBrowsing -bool NO
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool YES
 defaults write -g WebKitDeveloperExtras -bool YES
 
+# Passowrds
+defaults write com.apple.Passwords EnableMenuBarExtra -bool YES
+
 # Contacts
 # Under Privacy needs Contacts
 defaults write com.apple.AddressBook ABNameSortingFormat -string 'sortingFirstName sortingLastName'
