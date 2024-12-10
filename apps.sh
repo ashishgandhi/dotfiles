@@ -221,6 +221,11 @@ defaults write com.reederapp.5.macOS shortcuts -dict-add item.toggle-read \
     <integer>131072</integer>
   </dict>'
 
+# NetNewsWire
+defaults write com.ranchero.NetNewsWire-Evergreen timelineGroupByFeed -bool YES
+defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
+defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool YES
+
 # Mimestream
 defaults write com.mimestream.Mimestream TrailingEdgeSwipeAction -string trash
 defaults write com.mimestream.Mimestream LeadingEdgeSwipeAction -string archive
