@@ -149,6 +149,7 @@ defaults write com.apple.Safari WebKitPreferences.privateClickMeasurementEnabled
 defaults write com.apple.Safari EnableEnhancedPrivacyInRegularBrowsing -bool NO
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool YES
 defaults write com.apple.Safari BlockStoragePolicy -int 1
+defaults write com.apple.Safari UseHTTPSOnly -bool YES
 defaults write -g WebKitDeveloperExtras -bool YES
 
 # Contacts
