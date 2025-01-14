@@ -27,7 +27,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim yt-dlp zoxide
 
 # Install apps
-brew install --cask appcleaner dash fork google-drive iina kaleidoscope maestral signal suspicious-package
+brew install --cask appcleaner dash fork google-drive iina kaleidoscope maestral mimestream signal suspicious-package
 
 # Install Mac App Store apps
 # 1Blocker, 1Password for Safari, BBEdit, Crouton, DaisyDisk, Hex Fiend, Ivory, Keka, Microsoft To Do, Monodraw, Paste, Sink It, Reeder, TestFlight, Things, Vinegar, WhatsApp
@@ -231,6 +231,7 @@ defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool 
 defaults write com.mimestream.Mimestream TrailingEdgeSwipeAction -string trash
 defaults write com.mimestream.Mimestream LeadingEdgeSwipeAction -string archive
 defaults write com.mimestream.Mimestream ListStyle -string expanded
+defaults write com.mimestream.Mimestream HideBadgeForSpam -bool YES
 
 # Paste
 defaults write com.wiheads.paste kPSTPreferencesEnableSoundEffects -bool NO
