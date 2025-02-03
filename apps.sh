@@ -200,8 +200,8 @@ cd ~/.vim/plugged/YouCompleteMe
 ./install.py --go-completer
 
 # Reeder
-defaults write com.reederapp.5.macOS items.leading-swipe -int 1
-defaults write com.reederapp.5.macOS items.trailing-swipe -int 19
+defaults write com.reederapp.5.macOS items.leading-swipe -int 19
+defaults write com.reederapp.5.macOS items.trailing-swipe -int 1
 defaults write com.reederapp.5.macOS corekit.animator.configuration -int 2
 defaults write com.reederapp.5.macOS app.icon-badge -int 0
 defaults write com.reederapp.5.macOS app.layout -int 4
