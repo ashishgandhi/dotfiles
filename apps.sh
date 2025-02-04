@@ -286,7 +286,6 @@ defaults write com.colliderli.iina SUEnableAutomaticChecks -bool YES
 defaults write com.colliderli.iina resumeLastPosition -bool YES
 
 # Siri
-defaults write com.apple.Siri HotkeyTag -int 4
 defaults write com.apple.Siri StatusMenuVisible -bool YES
 defaults write com.apple.Siri TypeToSiriEnabled -bool YES
 defaults write com.apple.Siri VoiceTriggerUserEnabled -bool YES
