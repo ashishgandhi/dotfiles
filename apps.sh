@@ -157,7 +157,8 @@ defaults write -g WebKitDeveloperExtras -bool YES
 defaults write com.apple.AddressBook ABNameSortingFormat -string 'sortingFirstName sortingLastName'
 
 # Mail
-# Under Privacy needs Contacts
+# Under Privacy needs Full Disk Access
+defaults write com.apple.mail ColorQuoterColorIncoming -bool NO
 defaults write com.apple.mail NewMessagesSoundName -string Blow
 
 # Messages
