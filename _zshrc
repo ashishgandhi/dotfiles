@@ -30,5 +30,5 @@ alias grep='grep -E --color=auto'
 alias fgrep='grep -F'
 alias f='mdfind -onlyin .'
 alias h='fc -liD'
-alias yd="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best'"
+alias yd='yt-dlp --format-sort vcodec:h264,fps,res,acodec:m4a'
 alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Helpers/jsc"
