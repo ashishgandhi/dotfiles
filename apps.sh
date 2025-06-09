@@ -224,8 +224,8 @@ defaults write com.reederapp.5.macOS shortcuts -dict-add item.toggle-read \
   </dict>'
 
 # NetNewsWire
-defaults write com.ranchero.NetNewsWire-Evergreen timelineGroupByFeed -bool YES
 defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
+defaults write com.ranchero.NetNewsWire-Evergreen windowState -dict-add readFeedsFilterState '<true/>'
 defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool YES
 
 # Mimestream
