@@ -40,7 +40,7 @@ defaults write -g AppleKeyboardUIMode -int 3
 defaults write -g com.apple.trackpad.scaling -float 3
 defaults write -g com.apple.mouse.scaling -float 2.5
 defaults write -g com.apple.scrollwheel.scaling -float 1
-defaults write -g AppleShowScrollBars -string Automatic
+defaults write -g AppleShowScrollBars -string WhenScrolling
 defaults write -g InitialKeyRepeat -int 25
 defaults write -g KeyRepeat -int 2
 defaults write -g ApplePressAndHoldEnabled -bool NO
