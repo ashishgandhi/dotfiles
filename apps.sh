@@ -72,10 +72,8 @@ defaults write com.apple.menuextra.clock ShowDayOfWeek -bool YES
 
 # Window management
 defaults write com.apple.WindowManager EnableTiledWindowMargins -bool NO
-defaults write -g NSUserKeyEquivalents -dict-add $'\eWindow\eMove & Resize\eLeft' '~^←'
-defaults write -g NSUserKeyEquivalents -dict-add $'\eWindow\eMove & Resize\eRight' '~^→'
-defaults write -g NSUserKeyEquivalents -dict-add $'\eWindow\eMove & Resize\eReturn to Previous Size' '~^$↩'
-defaults write -g NSUserKeyEquivalents -dict-add $'\eWindow\eFill' '~^↩'
+# Tiling shortcuts are saved in a complex dictionary in com.apple.symbolichotkeys
+# Best to manually set customize them instead
 
 # Finder
 defaults write com.apple.finder ShowPathbar -bool YES
