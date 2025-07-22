@@ -27,7 +27,7 @@ brew analytics off
 brew install clang-format cmake ctags-exuberant ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig tldr vim yt-dlp zoxide
 
 # Install apps
-brew install --cask appcleaner dash dropbox fork google-drive iina kaleidoscope mimestream signal suspicious-package
+brew install --cask appcleaner dash dropbox fork google-drive iina kaleidoscope@3 mimestream signal suspicious-package
 
 # Install Mac App Store apps
 # 1Blocker, 1Password for Safari, BBEdit, Crouton, DaisyDisk, Hex Fiend, Ivory, Keka, Microsoft To Do, Monodraw, Paste, Sink It, Reeder, TestFlight, Things, Vinegar, WhatsApp
