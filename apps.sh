@@ -200,8 +200,6 @@ defaults write com.apple.Image_Capture IK_Scanner_selectedTag -int 1004
 # Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
-cd ~/.vim/plugged/YouCompleteMe
-./install.py --go-completer
 
 # Reeder
 defaults write com.reederapp.5.macOS items.leading-swipe -int 19

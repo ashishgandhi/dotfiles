@@ -12,8 +12,6 @@ Plug 'sjl/gundo.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/TaskList.vim'
-Plug 'Valloric/YouCompleteMe'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug '/opt/homebrew/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'google/vim-maktaba'
