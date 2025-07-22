@@ -155,6 +155,8 @@ defaults write com.apple.AddressBook ABNameSortingFormat -string 'sortingFirstNa
 
 # Mail
 # Under Privacy needs Full Disk Access
+defaults write com.apple.mail ConversationViewMarkAllAsRead -bool YES
+defaults write com.apple.mail ShouldHideHighlights -bool YES
 defaults write com.apple.mail ColorQuoterColorIncoming -bool NO
 defaults write com.apple.mail NewMessagesSoundName -string Blow
 
