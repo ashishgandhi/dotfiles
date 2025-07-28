@@ -54,7 +54,6 @@ defaults write com.apple.universalaccess showWindowTitlebarIcons -bool YES
 
 # Menu Bar
 # defaults -currentHost read com.apple.controlcenter BatteryShowPercentage -bool NO
-defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool YES
 #  2: System Settings set to "Show When Active"
 #  8: System Settings set to "Don't Show in Menu Bar"
 # 18: System Settings set to "Always Show in Menu Bar"
@@ -69,6 +68,10 @@ defaults write com.apple.menuextra.clock ShowDate -int 0
 defaults write com.apple.menuextra.clock ShowDayOfWeek -bool YES
 # This means the Menu Bar shows in full screen videos as well
 # defaults write -g AppleMenuBarVisibleInFullscreen -bool YES
+
+# Spotlight
+defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool YES
+defaults write com.apple.Spotlight PasteboardHistoryTimeout -int 2592000
 
 # Window management
 defaults write com.apple.WindowManager EnableTiledWindowMargins -bool NO
