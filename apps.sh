@@ -176,11 +176,11 @@ defaults write com.apple.iCal 'Default duration in minutes for new event' -float
 defaults write com.apple.calculator ViewDefaultsKey -string Scientific
 defaults write com.apple.calculator PaperTapeVisibleDefaultsKey -bool YES
 
-# Reminder
+# Reminders
 # Specify time in hours format like 1000
 defaults write com.apple.remindd todayNotificationFireTime -int -1
 defaults write com.apple.remindd showRemindersAsOverdue -bool YES
-defaults write com.apple.remindd shouldIncludeRemindersDueTodayInBadgeCount -bool YES
+defaults write com.apple.remindd shouldIncludeRemindersDueTodayInBadgeCount -bool NO
 defaults write com.apple.remindd enableAssignmentNotifications -bool YES
 
 # Image Capture
