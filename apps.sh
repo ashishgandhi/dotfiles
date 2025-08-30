@@ -54,11 +54,12 @@ defaults write com.apple.universalaccess showWindowTitlebarIcons -bool YES
 
 # Menu Bar
 # defaults -currentHost read com.apple.controlcenter BatteryShowPercentage -bool NO
-#  2: System Settings set to "Show When Active"
-#  8: System Settings set to "Don't Show in Menu Bar"
-# 18: System Settings set to "Always Show in Menu Bar"
+#  2: Show When Active
+#  8: Don't Show in Menu Bar
+# 18: Always Show in Menu Bar
 # 24: Removed manually from menu bar by dragging
 defaults -currentHost write com.apple.controlcenter Sound -int 18
+defaults -currentHost write com.apple.controlcenter Weather -int 2
 defaults -currentHost write com.apple.controlcenter NowPlaying -int 2
 defaults -currentHost write com.apple.controlcenter FocusModes -int 8
 # 0: when space allows
