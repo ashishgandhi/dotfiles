@@ -24,7 +24,7 @@ done
 brew analytics off
 
 # Install packages
-brew install cmake ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig vim yt-dlp zoxide
+brew install cmake fantastical ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig vim yt-dlp zoxide
 
 # Install apps
 brew install --cask appcleaner dash@6 dropbox fork google-drive iina kaleidoscope@3 mimestream paste signal suspicious-package
