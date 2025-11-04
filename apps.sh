@@ -72,7 +72,7 @@ defaults write com.apple.menuextra.clock ShowDayOfWeek -bool YES
 
 # Spotlight
 defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool YES
-defaults write com.apple.Spotlight PasteboardHistoryTimeout -int 2592000
+defaults write com.apple.Spotlight PasteboardHistoryTimeout -int 604800
 
 # Window management
 defaults write com.apple.WindowManager EnableTiledWindowMargins -bool NO
