@@ -30,8 +30,8 @@ brew install cmake fantastical ffmpeg fzf git go ipython jq mas ncdu python ripg
 brew install --cask appcleaner dash@6 dropbox fork google-drive iina kaleidoscope@3 mimestream netnewswire paste signal suspicious-package visual-studio-code
 
 # Install Mac App Store apps
-# 1Blocker, 1Password for Safari, Amphetamine, BBEdit, Crouton, DaisyDisk, Hex Fiend, Ivory, Keka, Microsoft To Do, Monodraw, Sink It, Reeder, TestFlight, Things, uBlock Origin Lite, Vinegar, WhatsApp, Wipr 2
-mas install 1365531024 1569813296 937984704 404009241 1461650987 411643860 1342896380 6444602274 470158793 1274495053 920404675 6449873635 1529448980 899247664 904280696 6745342698 1591303229 310633997 1662217862
+# 1Blocker, 1Password for Safari, Amphetamine, BBEdit, Crouton, DaisyDisk, Hex Fiend, Ivory, Keka, Microsoft To Do, Monodraw, Sink It, TestFlight, Things, uBlock Origin Lite, Vinegar, WhatsApp, Wipr 2
+mas install 1365531024 1569813296 937984704 404009241 1461650987 411643860 1342896380 6444602274 470158793 1274495053 920404675 6449873635 899247664 904280696 6745342698 1591303229 310633997 1662217862
 
 # Preferences
 
@@ -266,29 +266,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 vim +PlugInstall +qall
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py --go-completer
-
-# Reeder
-defaults write com.reederapp.5.macOS items.leading-swipe -int 19
-defaults write com.reederapp.5.macOS items.trailing-swipe -int 1
-defaults write com.reederapp.5.macOS corekit.animator.configuration -int 2
-defaults write com.reederapp.5.macOS app.icon-badge -int 0
-defaults write com.reederapp.5.macOS app.layout -int 0
-defaults write com.reederapp.5.macOS app.item-order -int -1
-defaults write com.reederapp.5.macOS app.item-group-by-feed -bool YES
-defaults write com.reederapp.5.macOS article.pull-to-next-prev -bool NO
-defaults write com.reederapp.5.macOS bionic.toolbar -bool NO
-defaults write com.reederapp.5.macOS browser.open-links-in-default-browser -bool YES
-defaults write com.reederapp.5.macOS toolbar.com.reederapp.internal.ReadLater -bool YES
-defaults write com.reederapp.5.macOS app.toolbar-sharing-services -array com.apple.share.AirDrop.send com.reederapp.internal.ReadLater com.reederapp.internal.CopyLink
-defaults write com.reederapp.5.macOS Cloud/default -dict syncing.interval '<integer>15</integer>' syncing.on-wake '<true/>'
-defaults write com.reederapp.5.macOS ReadLater/default -dict syncing.interval '<integer>15</integer>' syncing.on-wake '<true/>'
-defaults write com.reederapp.5.macOS shortcuts -dict-add item.toggle-read \
- '<dict>
-    <key>keyEquivalent</key>
-    <string>U</string>
-    <key>modifierFlags</key>
-    <integer>131072</integer>
-  </dict>'
 
 # NetNewsWire
 defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
