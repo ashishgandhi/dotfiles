@@ -77,8 +77,70 @@ defaults write com.apple.Spotlight PasteboardHistoryTimeout -int 604800
 
 # Window management
 defaults write com.apple.WindowManager EnableTiledWindowMargins -bool NO
-# Tiling shortcuts are saved in a complex dictionary in com.apple.symbolichotkeys
-# Best to manually set customize them instead
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 237 \
+ '<dict>
+    <key>enabled</key>
+    <true/>
+    <key>value</key>
+    <dict>
+      <key>parameters</key>
+      <array>
+        <integer>65535</integer>
+        <integer>126</integer>
+        <integer>11796480</integer>
+      </array>
+      <key>type</key>
+      <string>standard</string>
+    </dict>
+  </dict>'
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 239 \
+ '<dict>
+    <key>enabled</key>
+    <true/>
+    <key>value</key>
+    <dict>
+      <key>parameters</key>
+      <array>
+        <integer>65535</integer>
+        <integer>125</integer>
+        <integer>11796480</integer>
+      </array>
+      <key>type</key>
+      <string>standard</string>
+    </dict>
+  </dict>'
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 240 \
+ '<dict>
+    <key>enabled</key>
+    <true/>
+    <key>value</key>
+    <dict>
+      <key>parameters</key>
+      <array>
+        <integer>65535</integer>
+        <integer>123</integer>
+        <integer>11796480</integer>
+      </array>
+      <key>type</key>
+      <string>standard</string>
+    </dict>
+  </dict>'
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 241 \
+ '<dict>
+    <key>enabled</key>
+    <true/>
+    <key>value</key>
+    <dict>
+      <key>parameters</key>
+      <array>
+        <integer>65535</integer>
+        <integer>124</integer>
+        <integer>11796480</integer>
+      </array>
+      <key>type</key>
+      <string>standard</string>
+    </dict>
+  </dict>'
 
 # Finder
 defaults write com.apple.finder ShowPathbar -bool YES
