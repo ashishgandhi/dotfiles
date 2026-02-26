@@ -24,7 +24,7 @@ done
 brew analytics off
 
 # Install packages
-brew install cmake fantastical ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig vim yt-dlp zoxide
+brew install fantastical ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig vim yt-dlp zoxide
 
 # Install apps
 brew install --cask appcleaner dash@6 dropbox fork google-drive iina kaleidoscope@3 mimestream netnewswire paste signal suspicious-package visual-studio-code
@@ -264,8 +264,6 @@ defaults write com.apple.Image_Capture IK_Scanner_selectedTag -int 1004
 # Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
-cd ~/.vim/plugged/YouCompleteMe
-./install.py --go-completer
 
 # NetNewsWire
 defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
