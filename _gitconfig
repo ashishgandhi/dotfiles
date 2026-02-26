@@ -2,7 +2,6 @@
 	name = Ashish Gandhi
 	email = ag@ashishgandhi.org
 [core]
-	editor = vim
 	excludesfile = ~/.gitignore_global
 [init]
 	defaultBranch = main
