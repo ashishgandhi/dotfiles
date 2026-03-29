@@ -70,6 +70,7 @@ defaults write com.apple.menuextra.clock ShowDayOfWeek -bool YES
 # This means the Menu Bar shows in full screen videos as well
 # defaults write -g AppleMenuBarVisibleInFullscreen -bool YES
 defaults write -g SLSMenuBarUseBlurredAppearance -bool YES
+# defaults write -g NSMenuEnableActionImages -bool NO
 
 # Spotlight
 defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool YES
