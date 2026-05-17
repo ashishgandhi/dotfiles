@@ -30,8 +30,8 @@ brew install fantastical ffmpeg fzf git go ipython jq mas ncdu python ripgrep ti
 brew install --cask appcleaner chatgpt dash@6 dropbox fork google-drive iina kaleidoscope@3 mimestream netnewswire paste signal suspicious-package visual-studio-code
 
 # Install Mac App Store apps
-# 1Blocker, 1Password for Safari, Amphetamine, BBEdit, DaisyDisk, Flighty, Hex Fiend, Ivory, Keka, Microsoft To Do, Monodraw, Sink It, TestFlight, Things, uBlock Origin Lite, Vinegar, WhatsApp, Wipr 2
-mas install 1365531024 1569813296 937984704 404009241 411643860 1358823008 1342896380 6444602274 470158793 1274495053 920404675 6449873635 899247664 904280696 6745342698 1591303229 310633997 1662217862
+# 1Blocker, 1Password for Safari, Amphetamine, BBEdit, DaisyDisk, Flighty, Hex Fiend, Ivory, Keka, Monodraw, Sink It, TestFlight, Things, uBlock Origin Lite, Vinegar, WhatsApp, Wipr 2
+mas install 1365531024 1569813296 937984704 404009241 411643860 1358823008 1342896380 6444602274 470158793 920404675 6449873635 899247664 904280696 6745342698 1591303229 310633997 1662217862
 
 # Preferences
 
