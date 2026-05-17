@@ -12,15 +12,20 @@
 [pull]
 	rebase = true
 [diff]
-	tool = Kaleidoscope
+	tool = VS Code
 [difftool]
 	prompt = false
+[difftool "VS Code"]
+	cmd = code --wait --diff "$LOCAL" "$REMOTE"
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path "$MERGED" -- "$LOCAL" "$REMOTE"
 [merge]
-	tool = Kaleidoscope
+	tool = VS Code
 [mergetool]
 	prompt = false
+[mergetool "VS Code"]
+	cmd = code --wait --merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+	trustexitcode = true
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output "$MERGED" --base "$BASE" -- "$LOCAL" --snapshot "$REMOTE" --snapshot
 	trustexitcode = true
