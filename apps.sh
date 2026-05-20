@@ -155,9 +155,10 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool YES
 killall Finder
 
 # Dock
-defaults write com.apple.dock tilesize -int 42
+defaults write com.apple.dock magnification -bool YES
+defaults write com.apple.dock tilesize -int 45
+defaults write com.apple.dock largesize -int 60
 defaults write com.apple.dock launchanim -bool NO
-defaults write com.apple.dock magnification -bool NO
 defaults write com.apple.dock show-recents -bool NO
 killall Dock
 
