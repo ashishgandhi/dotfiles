@@ -316,7 +316,10 @@ defaults write com.knollsoft.Rectangle footprintAnimationDurationMultiplier -flo
 defaults write com.tapbots.Ivory mediaPlaybackType -int 1
 
 # Things
-defaults write com.culturedcode.ThingsMac CCDockCountType -int 1
+group="JLMPQHK86H.com.culturedcode.ThingsMac"
+plist="$HOME/Library/Group Containers/$group/Library/Preferences/$group.plist"
+defaults write "$plist" badgeCountMode -int 1
+defaults write "$plist" quickEntryDefaultDestination -int 1
 
 # BBEdit
 defaults write com.barebones.bbedit EditorSoftWrap -bool YES
