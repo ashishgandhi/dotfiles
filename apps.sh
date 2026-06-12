@@ -53,7 +53,7 @@ defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool YES
 defaults write com.apple.universalaccess showWindowTitlebarIcons -bool YES
 
 # Menu Bar
-# defaults -currentHost read com.apple.controlcenter BatteryShowPercentage -bool NO
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool YES
 #  2: Show When Active
 #  8: Don't Show in Menu Bar
 # 18: Always Show in Menu Bar
