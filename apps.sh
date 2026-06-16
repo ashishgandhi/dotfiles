@@ -257,8 +257,9 @@ defaults write com.apple.Image_Capture IK_ScanResolution -int 300
 defaults write com.apple.Image_Capture IK_CreateSingleDocument -bool YES
 # Fall back to default of US letter
 defaults write com.apple.Image_Capture IK_UseCustomScanSize -int 0
-# Save scans as PDFs
+# Save scans as PDFs and combine them into a single file
 defaults write com.apple.Image_Capture IK_FileFormatTagColor -int 7
+defaults write com.apple.Image_Capture IK_CreateSingleDocument -bool YES
 # Set scan location from predefined list to ~/Downloads
 # IK_Scanner_selectedTag overrides IK_Scanner_downloadURL
 defaults write com.apple.Image_Capture IK_Scanner_selectedTag -int 1004
