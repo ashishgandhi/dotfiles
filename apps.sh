@@ -27,11 +27,11 @@ brew analytics off
 brew install fantastical ffmpeg fzf git go ipython jq mas ncdu python ripgrep tig vim yt-dlp zoxide
 
 # Install apps
-brew install --cask 1password appcleaner chatgpt dash@6 dropbox fork google-drive iina kaleidoscope@3 mimestream netnewswire paste signal suspicious-package visual-studio-code
+brew install --cask 1password appcleaner chatgpt dash@6 dropbox fork google-drive iina kaleidoscope@3 mimestream paste signal suspicious-package visual-studio-code
 
 # Install Mac App Store apps
-# 1Blocker, 1Password for Safari, Amphetamine, BBEdit, DaisyDisk, Flighty, Hex Fiend, Ivory, Keka, Monodraw, Sink It, TestFlight, Things, uBlock Origin Lite, Vinegar, WhatsApp, Wipr 2
-mas install 1365531024 1569813296 937984704 404009241 411643860 1358823008 1342896380 6444602274 470158793 920404675 6449873635 899247664 904280696 6745342698 1591303229 310633997 1662217862
+# 1Blocker, 1Password for Safari, Amphetamine, BBEdit, DaisyDisk, Flighty, Hex Fiend, Ivory, Keka, Monodraw, Reeder, Sink It, TestFlight, Things, uBlock Origin Lite, Vinegar, WhatsApp, Wipr 2
+mas install 1365531024 1569813296 937984704 404009241 411643860 1358823008 1342896380 6444602274 470158793 920404675 1529448980 6449873635 899247664 904280696 6745342698 1591303229 310633997 1662217862
 
 # Preferences
 
@@ -268,10 +268,28 @@ defaults write com.apple.Image_Capture IK_Scanner_selectedTag -int 1004
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 
-# NetNewsWire
-defaults write com.ranchero.NetNewsWire-Evergreen refreshInterval -int 2
-defaults write com.ranchero.NetNewsWire-Evergreen windowState -dict-add readFeedsFilterState '<true/>'
-defaults write com.ranchero.NetNewsWire-Evergreen SUEnableAutomaticChecks -bool YES
+# Reeder
+defaults write com.reederapp.5.macOS items.leading-swipe -int 19
+defaults write com.reederapp.5.macOS items.trailing-swipe -int 1
+defaults write com.reederapp.5.macOS corekit.animator.configuration -int 2
+defaults write com.reederapp.5.macOS app.icon-badge -int 0
+defaults write com.reederapp.5.macOS app.layout -int 0
+defaults write com.reederapp.5.macOS app.item-order -int -1
+defaults write com.reederapp.5.macOS app.item-group-by-feed -bool YES
+defaults write com.reederapp.5.macOS article.pull-to-next-prev -bool NO
+defaults write com.reederapp.5.macOS bionic.toolbar -bool NO
+defaults write com.reederapp.5.macOS browser.open-links-in-default-browser -bool YES
+defaults write com.reederapp.5.macOS toolbar.com.reederapp.internal.ReadLater -bool YES
+defaults write com.reederapp.5.macOS app.toolbar-sharing-services -array com.apple.share.AirDrop.send com.reederapp.internal.ReadLater com.reederapp.internal.CopyLink
+defaults write com.reederapp.5.macOS Cloud/default -dict syncing.interval '<integer>15</integer>' syncing.on-wake '<true/>'
+defaults write com.reederapp.5.macOS ReadLater/default -dict syncing.interval '<integer>15</integer>' syncing.on-wake '<true/>'
+defaults write com.reederapp.5.macOS shortcuts -dict-add item.toggle-read \
+ '<dict>
+    <key>keyEquivalent</key>
+    <string>U</string>
+    <key>modifierFlags</key>
+    <integer>131072</integer>
+  </dict>'
 
 # Mimestream
 defaults write com.mimestream.Mimestream TrailingEdgeSwipeAction -string trash
