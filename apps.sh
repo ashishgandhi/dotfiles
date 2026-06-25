@@ -275,13 +275,13 @@ defaults write com.reederapp.5.macOS corekit.animator.configuration -int 2
 defaults write com.reederapp.5.macOS app.icon-badge -int 0
 defaults write com.reederapp.5.macOS app.layout -int 0
 defaults write com.reederapp.5.macOS app.item-order -int -1
-defaults write com.reederapp.5.macOS app.item-group-by-feed -bool YES
+defaults write com.reederapp.5.macOS app.item-group-by-feed -bool NO
 defaults write com.reederapp.5.macOS article.pull-to-next-prev -bool NO
 defaults write com.reederapp.5.macOS bionic.toolbar -bool NO
 defaults write com.reederapp.5.macOS browser.open-links-in-default-browser -bool YES
 defaults write com.reederapp.5.macOS toolbar.com.reederapp.internal.ReadLater -bool YES
 defaults write com.reederapp.5.macOS app.toolbar-sharing-services -array com.apple.share.AirDrop.send com.reederapp.internal.ReadLater com.reederapp.internal.CopyLink
-defaults write com.reederapp.5.macOS Cloud/default -dict syncing.interval '<integer>15</integer>' syncing.on-wake '<true/>'
+defaults write com.reederapp.5.macOS Cloud/default -dict syncing.interval '<integer>5</integer>' syncing.on-wake '<true/>' subscriptions.sort '<integer>1</integer>'
 defaults write com.reederapp.5.macOS ReadLater/default -dict syncing.interval '<integer>15</integer>' syncing.on-wake '<true/>'
 defaults write com.reederapp.5.macOS shortcuts -dict-add item.toggle-read \
  '<dict>
