@@ -88,7 +88,7 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 237 \
       <array>
         <integer>65535</integer>
         <integer>126</integer>
-        <integer>11796480</integer>
+        <integer>9175040</integer>
       </array>
       <key>type</key>
       <string>standard</string>
@@ -104,7 +104,7 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 239 \
       <array>
         <integer>65535</integer>
         <integer>125</integer>
-        <integer>11796480</integer>
+        <integer>9175040</integer>
       </array>
       <key>type</key>
       <string>standard</string>
@@ -120,7 +120,7 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 240 \
       <array>
         <integer>65535</integer>
         <integer>123</integer>
-        <integer>11796480</integer>
+        <integer>9175040</integer>
       </array>
       <key>type</key>
       <string>standard</string>
@@ -136,7 +136,7 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 241 \
       <array>
         <integer>65535</integer>
         <integer>124</integer>
-        <integer>11796480</integer>
+        <integer>9175040</integer>
       </array>
       <key>type</key>
       <string>standard</string>
