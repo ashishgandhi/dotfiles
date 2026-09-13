@@ -6,7 +6,7 @@
 
 path=(
   $GOBIN
-  /opt/homebrew/opt/{go,python}/libexec/bin
+  /opt/homebrew/opt/python/libexec/bin
   /opt/homebrew/{bin,sbin}
   $path
 )

@@ -4,6 +4,5 @@ export EDITOR="$VISUAL"
 export PAGER='less'
 export LESS='FRX'
 
-export GOROOT=/opt/homebrew/opt/go/libexec
 export GOPATH=~/Developer/go
 export GOBIN=~/Developer/go/bin
