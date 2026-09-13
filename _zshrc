@@ -21,7 +21,9 @@ compinit
 # Tools
 source "$(brew --prefix fzf)/shell/key-bindings.zsh"
 source "$(brew --prefix fzf)/shell/completion.zsh"
-source "${HOME}/.config/iterm2/shell_integration.zsh"
+if [[ "${TERM_PROGRAM:-}" == "iTerm.app" ]]; then
+  source "${HOME}/.config/iterm2/shell_integration.zsh"
+fi
 eval "$(zoxide init --cmd j zsh)"
 
 # Aliases
